@@ -1,6 +1,6 @@
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(1.4) 						            -- Указываем версию скрипта / FINAL
+script_version(1.5) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -94,7 +94,7 @@ function cmd_dok(args)
         sampSendChat(string.format('/r [СОБР]: 10-%s, solo.', args))
       end
     else
-      atext('{00FFFF}Информация | Введите: /dok тен-код')
+      atext('{00FFFF}Информация | {FFFFFF}Введите: /dok тен-код')
       return
     end
   else
