@@ -1,6 +1,6 @@
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(02.06.2022) 						            -- Указываем версию скрипта / FINAL
+script_version(1.2) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -36,7 +36,6 @@ local nicks = {
   ['Joon_Kolimen'] = 'Ривес',
   ['Liquidator_Ward'] = 'Ликва',
   ['Phoenix_Wright'] = 'Адвокат',
-  ['Andrew_Evonzer'] = 'Глиномес',
   ['Reymond_Holiday'] = 'Холи'
 }
 
@@ -114,8 +113,8 @@ end
 
 -- Авто-обновление
 function updateScript()
-	local filepath = os.getenv('TEMP') .. '\\название проверочного файла'
-	downloadUrlToFile('https://raw.githubusercontent.com/Enotiwe/erp-script/9dc30b8daca4ec3c1b334ceb96a78e9ee9cb4dfb/online-update.json', filepath, function(id, status, p1, p2)
+	local filepath = os.getenv('TEMP') .. '\\online-update.json'
+	downloadUrlToFile('https://raw.githubusercontent.com/Enotiwe/erp-script/main/online-update.json', filepath, function(id, status, p1, p2)
 		if status == dlstatus.STATUS_ENDDOWNLOADDATA then
 			local file = io.open(filepath, 'r')
 			if file then
