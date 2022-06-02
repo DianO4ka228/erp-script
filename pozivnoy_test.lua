@@ -1,6 +1,6 @@
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(1.2) 						            -- Указываем версию скрипта / FINAL
+script_version(1.3) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -36,6 +36,7 @@ local nicks = {
   ['Joon_Kolimen'] = 'Ривес',
   ['Liquidator_Ward'] = 'Ликва',
   ['Phoenix_Wright'] = 'Адвокат',
+  ['Grace Osborn'] = 'Рибка',
   ['Reymond_Holiday'] = 'Холи'
 }
 
@@ -92,7 +93,7 @@ function cmd_dok(args)
         sampSendChat(string.format('/r [СОБР]: 10-%s, solo.', args))
       end
     else
-      atext('Введите: /dok [тен-код]')
+      atext('{00FFFF}Введите: {FFFFFF}/dok [тен-код]')
       return
     end
   else
