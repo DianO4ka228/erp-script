@@ -1,6 +1,6 @@
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(1.3) 						            -- Указываем версию скрипта / FINAL
+script_version(1.4) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -9,34 +9,36 @@ require 'lib.sampfuncs'
 local dlstatus = require('moonloader').download_status
 
 -- Позывные
-local nicks = { 
+local nicks = { -- [''] = '',
+-- 12+
+  ['Andrew_Evonzer'] = 'Глиномес',
+  ['Grace_Osborn'] = 'Рибка',
+  ['Emma_Cooper'] = 'Наташка',
   ['Wurn_Linkol'] = 'Даркхолм',
+-- Ком. состав.
   ['Kirill_Magomedov'] = 'Мага',
-  ['Euro_Dancmenove'] = 'Вампи',
-  ['Jey_Apps'] = 'Яблоко',
-  ['Sonny_Royals'] = 'Пума',
-  ['Jo_Bax'] = 'Бакс',
+  ['Sonny_Royals'] = 'Куба',
   ['Roze_Deadinside'] = 'Демон',
-  ['Rausanary_Royals'] = 'Сокол',
-  ['Tony_Kartez'] = 'Мент',
-  ['Yuito_Navarrete'] = 'Арбуз',
-  ['Adrian_Roberts'] = 'Алёна Даст',
-  ['Jason_Bianchii'] = 'Лось',
   ['Andy_Fawkess'] = 'Енот',
-  ['Sofia_Murphy'] = 'Смурф',
-  ['Henrich_Rogge'] = 'Рожок',
-  ['Max_Meow'] = 'Кот',
-  ['Sofa_Meow'] = 'Киса',
-  ['Rewazzo_Rose'] = 'Кабан',
-  ['Tyler_Lance'] = 'Пиво',
-  ['Paulz_Xzoom'] = 'Икс',
+  ['Adrian_Roberts'] = 'Алёна',
+-- Бойцы.
   ['Vlad_Werber'] = 'Окунь',
-  ['Roberto_Karrera'] = 'Батя',
+  ['Jo_Bax'] = 'Бакс',
+  ['Paulz_Xzoom'] = 'Икс',
+  ['Tyler_Lance'] = 'Пиво',
+  ['Sofa_Meow'] = 'Киса',
+  ['Max_Meow'] = 'Кот',
+  ['Rewazzo_Rose'] = 'Кабан',
+  ['Rausanary_Royals'] = 'Сокол',
+-- Стажеры.
+  ['Reymond_Holiday'] = 'Холи'
   ['Joon_Kolimen'] = 'Ривес',
+  ['Roberto_Karrera'] = 'Батя',
   ['Liquidator_Ward'] = 'Ликва',
   ['Phoenix_Wright'] = 'Адвокат',
-  ['Grace_Osborn'] = 'Рибка',
-  ['Reymond_Holiday'] = 'Холи'
+-- Резерв
+  ['Yukio_Matsui'] = 'Джусай',
+  ['Tony_Kartez'] = 'Мент'
 }
 
 function main()
@@ -92,7 +94,7 @@ function cmd_dok(args)
         sampSendChat(string.format('/r [СОБР]: 10-%s, solo.', args))
       end
     else
-      atext('Введите: /dok [тен-код]')
+      atext('{00FFFF}Информация | Введите: /dok тен-код')
       return
     end
   else
