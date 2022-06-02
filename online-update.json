@@ -1,4 +1,4 @@
 {
-  "latest": "1.2",
-  "updateurl": "https://raw.githubusercontent.com/Enotiwe/erp-script/main/pozivnoy_test.lua"
+  "latest": 1.2,
+  "updateurl": "https://raw.githubusercontent.com/Enotiwe/erp-script/main/online-update.json"
 }
