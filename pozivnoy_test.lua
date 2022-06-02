@@ -4,9 +4,9 @@ script_version(1.3) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
-local dlstatus = require('moonloader').download_status
 require 'lib.moonloader'
 require 'lib.sampfuncs'
+local dlstatus = require('moonloader').download_status
 
 -- Позывные
 local nicks = { 
@@ -20,7 +20,7 @@ local nicks = {
   ['Rausanary_Royals'] = 'Сокол',
   ['Tony_Kartez'] = 'Мент',
   ['Yuito_Navarrete'] = 'Арбуз',
-  ['Adrian_Roberts'] = 'Алёна',
+  ['Adrian_Roberts'] = 'Алёна Даст',
   ['Jason_Bianchii'] = 'Лось',
   ['Andy_Fawkess'] = 'Енот',
   ['Sofia_Murphy'] = 'Смурф',
@@ -28,7 +28,6 @@ local nicks = {
   ['Max_Meow'] = 'Кот',
   ['Sofa_Meow'] = 'Киса',
   ['Rewazzo_Rose'] = 'Кабан',
-  ['Hermanni_Virtanen'] = 'Финн',
   ['Tyler_Lance'] = 'Пиво',
   ['Paulz_Xzoom'] = 'Икс',
   ['Vlad_Werber'] = 'Окунь',
@@ -36,7 +35,7 @@ local nicks = {
   ['Joon_Kolimen'] = 'Ривес',
   ['Liquidator_Ward'] = 'Ликва',
   ['Phoenix_Wright'] = 'Адвокат',
-  ['Grace Osborn'] = 'Рибка',
+  ['Grace_Osborn'] = 'Рибка',
   ['Reymond_Holiday'] = 'Холи'
 }
 
@@ -93,7 +92,7 @@ function cmd_dok(args)
         sampSendChat(string.format('/r [СОБР]: 10-%s, solo.', args))
       end
     else
-      atext('{00FFFF}Введите: {FFFFFF}/dok [тен-код]')
+      atext('Введите: /dok [тен-код]')
       return
     end
   else
