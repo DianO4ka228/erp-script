@@ -4,6 +4,7 @@ script_version(0.6) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
+local dlstatus = require('moonloader').download_status
 require 'lib.moonloader'
 require 'lib.sampfuncs'
 
@@ -37,8 +38,6 @@ local nicks = {
   ['Phoenix_Wright'] = 'Адвокат',
   ['Reymond_Holiday'] = 'Холи'
 }
-
-local prefix = '['..string.upper(thisScript().name)..']: '
 
 function main()
   
