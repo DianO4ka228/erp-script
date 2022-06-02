@@ -31,7 +31,7 @@ local nicks = { -- [''] = '',
   ['Rewazzo_Rose'] = 'Кабан',
   ['Rausanary_Royals'] = 'Сокол',
 -- Стажеры.
-  ['Reymond_Holiday'] = 'Холи'
+  ['Reymond_Holiday'] = 'Холи',
   ['Joon_Kolimen'] = 'Ривес',
   ['Roberto_Karrera'] = 'Батя',
   ['Liquidator_Ward'] = 'Ликва',
