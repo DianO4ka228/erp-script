@@ -1,6 +1,6 @@
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(1.6) 						            -- Указываем версию скрипта / FINAL
+script_version(1.7) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -36,6 +36,7 @@ local nicks = { -- [''] = '',
   ['Roberto_Karrera'] = 'Батя',
   ['Liquidator_Ward'] = 'Ликва',
   ['Phoenix_Wright'] = 'Адвокат',
+  ['Satoshi_Sapporo'] = 'Сато',
 -- Резерв
   ['Yukio_Matsui'] = 'Джусай',
   ['Tony_Kartez'] = 'Мент'
@@ -94,11 +95,11 @@ function cmd_dok(args)
         sampSendChat(string.format('/r [СОБР]: 10-%s, solo.', args))
       end
     else
-      atext('{808080}Информация | {FFFFFF}Введите: /dok тен-код')
+      atext('{808080}Информация | {FFFFFF}Введите: /dok тен-код.')
       return
     end
   else
-    atext('{808080}Ошибка | Вы не сидите в транспорте.')
+    atext('{808080}Ошибка | {FFFFFF}Вы не сидите в транспорте.')
     return
   end
 end
