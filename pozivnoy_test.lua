@@ -13,7 +13,7 @@ local dlstatus = require('moonloader').download_status
 local nicks = { -- [''] = '',
 -- 12+
   ['Andrew_Evonzer'] = 'Глиномес',
-  ['Grace_Osborn'] = 'Рибка',
+  ['Grace_Osborn'] = 'Вдова',
   ['Emma_Cooper'] = 'Наташка',
   ['Wurn_Linkol'] = 'Даркхолм',
 -- Ком. состав.
