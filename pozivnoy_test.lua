@@ -1,6 +1,6 @@
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(2.0) 						            -- Указываем версию скрипта / FINAL
+script_version(2.1) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -37,7 +37,6 @@ local nicks = { -- [''] = '',
   ['Phoenix_Wright'] = 'Адвокат',
   ['Reymond_Holiday'] = 'Холи',
   ['Ayanxkoji_Omalley'] = 'Моль',
-  ['Joon_Kolimen'] = 'Ривес',
   ['Roberto_Karrera'] = 'Батя',
   ['Satoshi_Sapporo'] = 'Сато',
 -- Резерв
