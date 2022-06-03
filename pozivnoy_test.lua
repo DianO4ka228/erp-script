@@ -1,12 +1,13 @@
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(1.9) 						            -- Указываем версию скрипта / FINAL
+script_version(2.0) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
 require 'lib.moonloader'
 require 'lib.sampfuncs'
 local dlstatus = require('moonloader').download_status
+
 
 -- Позывные
 local nicks = { -- [''] = '',
@@ -60,11 +61,12 @@ function main()
 	-- Проверка на автозагрузку.
   updateScript()
   -- Бесконечный цикл для постоянной работы скрипта
-  
   while true do
     wait(0)
   end
 end
+
+
 
 function cmd_dok(args)
   local info = {}
@@ -92,9 +94,9 @@ function cmd_dok(args)
         end
       end
       if #info > 0 then
-        sampSendChat(string.format('/r [СОБР]: 10-%s, %s.', args, table.concat(info,', ')))
+        sampProcessChatInput(string.format('/r 10-%s, %s.', args, table.concat(info,', ')))
       else
-        sampSendChat(string.format('/r [СОБР]: 10-%s, solo.', args))
+        sampProcessChatInput(string.format('/r 10-%s, solo.', args))
       end
     else
       atext('{808080}Информация | {FFFFFF}Введите: /dok тен-код.')
