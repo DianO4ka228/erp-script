@@ -1,6 +1,6 @@
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(1.8) 						            -- Указываем версию скрипта / FINAL
+script_version(1.9) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -30,14 +30,15 @@ local nicks = { -- [''] = '',
   ['Max_Meow'] = 'Кот',
   ['Rewazzo_Rose'] = 'Кабан',
   ['Rausanary_Royals'] = 'Сокол',
+  ['Yuito_Navarrete'] = 'Арбуз',
 -- Стажеры.
+  ['Cherry_Maybach'] = 'Вишня',
+  ['Phoenix_Wright'] = 'Адвокат',
   ['Reymond_Holiday'] = 'Холи',
+  ['Ayanxkoji_Omalley'] = 'Моль',
   ['Joon_Kolimen'] = 'Ривес',
   ['Roberto_Karrera'] = 'Батя',
-  ['Liquidator_Ward'] = 'Ликва',
-  ['Phoenix_Wright'] = 'Адвокат',
   ['Satoshi_Sapporo'] = 'Сато',
-  ['Yuito_Navarrete'] = 'Арбуз',
 -- Резерв
   ['Yukio_Matsui'] = 'Джусай',
   ['Tony_Kartez'] = 'Мент'
