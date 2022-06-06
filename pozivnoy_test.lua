@@ -1,6 +1,7 @@
+--Update: Обновил позывной Наташи.
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(2.2) 						            -- Указываем версию скрипта / FINAL
+script_version(2.3) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -14,7 +15,7 @@ local nicks = { -- [''] = '',
 -- 12+
   ['Andrew_Evonzer'] = 'Глиномес',
   ['Grace_Osborn'] = 'Вдова',
-  ['Emma_Cooper'] = 'Наташка',
+  ['Emma_Cooper'] = 'Мать',
   ['Wurn_Linkol'] = 'Даркхолм',
 -- Ком. состав.
   ['Kirill_Magomedov'] = 'Мага',
