@@ -1,7 +1,7 @@
 --Update: Обновил позывной Наташи.
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(2.4) 						            -- Указываем версию скрипта / FINAL
+script_version(2.51) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -30,7 +30,6 @@ local nicks = { -- [''] = '',
   ['Sofa_Meow'] = 'Киса',
   ['Max_Meow'] = 'Кот',
   ['Rewazzo_Rose'] = 'Кабан',
-  ['Yuito_Navarrete'] = 'Арбуз',
   ['Jason_Bianchii'] = 'Лось',
 -- Стажеры.
   ['Cherry_Maybach'] = 'Вишня',
@@ -40,6 +39,8 @@ local nicks = { -- [''] = '',
   ['Roberto_Karrera'] = 'Батя',
   ['Satoshi_Sapporo'] = 'Сато',
   ['Mia_Lightwood'] = 'Док',
+  ['Frensin_Frensis'] = 'Камикадзе',
+  ['Bugurslan_Lovefendi'] = 'Бур',
 -- Резерв
   ['Yukio_Matsui'] = 'Джусай',
   ['Tony_Kartez'] = 'Мент'
