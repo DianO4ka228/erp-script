@@ -1,7 +1,7 @@
 --Update: Обновил позывной Наташи.
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(2.52) 						            -- Указываем версию скрипта / FINAL
+script_version(2.53) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -44,8 +44,7 @@ local nicks = { -- [''] = '',
   ['Emily_Raylonds'] = 'Закат',
   
 -- Резерв
-  ['Yukio_Matsui'] = 'Джусай',
-  ['Tony_Kartez'] = 'Мент'
+  ['Yukio_Matsui'] = 'Джусай'
 }
 
 function main()
