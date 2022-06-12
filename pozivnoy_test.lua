@@ -1,7 +1,7 @@
 --Update: Обновил позывной Наташи.
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(2.55) 						            -- Указываем версию скрипта / FINAL
+script_version(2.56) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -22,8 +22,13 @@ local nicks = { -- [''] = '',
   ['Sonny_Royals'] = 'Куба',
   ['Roze_Deadinside'] = 'Демон',
   ['Andy_Fawkess'] = 'Енот',
-  ['Adrian_Roberts'] = 'Алёна',
+  ['Satoshi_Sapporo'] = 'Сато',
+  ['Reymond_Holiday'] = 'Холи',
 -- Бойцы.
+  ['Cherry_Maybach'] = 'Вишня',
+  ['Phoenix_Wright'] = 'Адвокат',
+  ['Ayanxkoji_Omalley'] = 'Моль',
+  ['Mia_Lightwood'] = 'Док',
   ['Jo_Bax'] = 'Бакс',
   ['Paulz_Xzoom'] = 'Икс',
   ['Sofa_Meow'] = 'Киса',
@@ -31,19 +36,15 @@ local nicks = { -- [''] = '',
   ['Rewazzo_Rose'] = 'Кабан',
   ['Jason_Bianchii'] = 'Лось',
 -- Стажеры.
-  ['Cherry_Maybach'] = 'Вишня',
-  ['Phoenix_Wright'] = 'Адвокат',
-  ['Reymond_Holiday'] = 'Холи',
-  ['Ayanxkoji_Omalley'] = 'Моль',
-  ['Roberto_Karrera'] = 'Батя',
-  ['Satoshi_Sapporo'] = 'Сато',
-  ['Mia_Lightwood'] = 'Док',
   ['Frensin_Frensis'] = 'Камикадзе',
   ['Bugurslan_Lovefendi'] = 'Бур',
   ['Emily_Raylonds'] = 'Закат',
   ['Alex_Frank'] = 'Немец',
+  ['Martin_Twix'] = 'Рассвет',
   
 -- Резерв
+  ['Roberto_Karrera'] = 'Батя',
+  ['Adrian_Roberts'] = 'Алёна',
   ['Yukio_Matsui'] = 'Джусай'
 }
 
