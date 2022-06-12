@@ -1,7 +1,7 @@
 --Update: Обновил позывной Наташи.
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(2.54) 						            -- Указываем версию скрипта / FINAL
+script_version(2.55) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -26,7 +26,6 @@ local nicks = { -- [''] = '',
 -- Бойцы.
   ['Jo_Bax'] = 'Бакс',
   ['Paulz_Xzoom'] = 'Икс',
-  ['Tyler_Lance'] = 'Пиво',
   ['Sofa_Meow'] = 'Киса',
   ['Max_Meow'] = 'Кот',
   ['Rewazzo_Rose'] = 'Кабан',
