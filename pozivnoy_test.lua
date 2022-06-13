@@ -1,7 +1,7 @@
 --Update: Обновил позывной Наташи.
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(2.56) 						            -- Указываем версию скрипта / FINAL
+script_version(2.57) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -13,39 +13,38 @@ local dlstatus = require('moonloader').download_status
 -- Позывные
 local nicks = { -- [''] = '',
 -- 12+
-  ['Andrew_Evonzer'] = 'Глиномес',
-  ['Grace_Osborn'] = 'Вдова',
-  ['Emma_Cooper'] = 'Мать',
-  ['Wurn_Linkol'] = 'Даркхолм',
+  ['Andrew_Evonzer'] = 'Глиномес', -- Полковник.
+  ['Grace_Osborn'] = 'Вдова', -- Подполковник.
+  ['Emma_Cooper'] = 'Мать', -- Подполковник.
+  ['Wurn_Linkol'] = 'Даркхолм', -- Майор.
+
 -- Ком. состав.
-  ['Kirill_Magomedov'] = 'Мага',
-  ['Sonny_Royals'] = 'Куба',
-  ['Roze_Deadinside'] = 'Демон',
-  ['Andy_Fawkess'] = 'Енот',
-  ['Satoshi_Sapporo'] = 'Сато',
-  ['Reymond_Holiday'] = 'Холи',
+  ['Kirill_Magomedov'] = 'Мага', --Куратор
+  ['Roze_Deadinside'] = 'Демон', -- Командир.
+  ['Andy_Fawkess'] = 'Енот', -- Зам. Командира.
+  ['Satoshi_Sapporo'] = 'Сато', -- Инструктор.
+  ['Reymond_Holiday'] = 'Холи', -- Инструктор.
+
 -- Бойцы.
-  ['Cherry_Maybach'] = 'Вишня',
   ['Phoenix_Wright'] = 'Адвокат',
-  ['Ayanxkoji_Omalley'] = 'Моль',
   ['Mia_Lightwood'] = 'Док',
+  ['Jason_Bianchii'] = 'Лось',
   ['Jo_Bax'] = 'Бакс',
-  ['Paulz_Xzoom'] = 'Икс',
   ['Sofa_Meow'] = 'Киса',
   ['Max_Meow'] = 'Кот',
   ['Rewazzo_Rose'] = 'Кабан',
-  ['Jason_Bianchii'] = 'Лось',
+  ['Ayanxkoji_Omalley'] = 'Моль',
+  ['Yukio_Matsui'] = 'Джусай',
+  ['Cherry_Maybach'] = 'Вишня',
+
 -- Стажеры.
-  ['Frensin_Frensis'] = 'Камикадзе',
   ['Bugurslan_Lovefendi'] = 'Бур',
   ['Emily_Raylonds'] = 'Закат',
   ['Alex_Frank'] = 'Немец',
   ['Martin_Twix'] = 'Рассвет',
   
 -- Резерв
-  ['Roberto_Karrera'] = 'Батя',
-  ['Adrian_Roberts'] = 'Алёна',
-  ['Yukio_Matsui'] = 'Джусай'
+  ['Roberto_Karrera'] = 'Батя'
 }
 
 function main()
