@@ -1,7 +1,7 @@
 --Update: Обновил позывной Наташи.
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(2.57) 						            -- Указываем версию скрипта / FINAL
+script_version(2.58) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -22,8 +22,10 @@ local nicks = { -- [''] = '',
   ['Kirill_Magomedov'] = 'Мага', --Куратор
   ['Roze_Deadinside'] = 'Демон', -- Командир.
   ['Andy_Fawkess'] = 'Енот', -- Зам. Командира.
+  ['Reymond_Holiday'] = 'Холи', -- Зам. Командира.
   ['Satoshi_Sapporo'] = 'Сато', -- Инструктор.
-  ['Reymond_Holiday'] = 'Холи', -- Инструктор.
+  ['Ayanxkoji_Omalley'] = 'Моль', -- Инструктор.
+  
 
 -- Бойцы.
   ['Phoenix_Wright'] = 'Адвокат',
@@ -33,15 +35,17 @@ local nicks = { -- [''] = '',
   ['Sofa_Meow'] = 'Киса',
   ['Max_Meow'] = 'Кот',
   ['Rewazzo_Rose'] = 'Кабан',
-  ['Ayanxkoji_Omalley'] = 'Моль',
+  
   ['Yukio_Matsui'] = 'Джусай',
   ['Cherry_Maybach'] = 'Вишня',
-
--- Стажеры.
-  ['Bugurslan_Lovefendi'] = 'Бур',
   ['Emily_Raylonds'] = 'Закат',
+  ['Bugurslan_Lovefendi'] = 'Бур',
+  
+  
+-- Стажеры.
   ['Alex_Frank'] = 'Немец',
   ['Martin_Twix'] = 'Рассвет',
+  ['Foxit_Makayonok'] = 'Лис',
   
 -- Резерв
   ['Roberto_Karrera'] = 'Батя'
