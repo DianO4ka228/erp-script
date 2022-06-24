@@ -1,7 +1,7 @@
 --Update: Обновил позывной Наташи.
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(2.63) 						            -- Указываем версию скрипта / FINAL
+script_version(2.64) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -20,39 +20,42 @@ local nicks = { -- [''] = '',
 
 -- Ком. состав.
   ['Kirill_Magomedov'] = 'Мага', --Куратор
-  ['Roze_Deadinside'] = 'Демон', -- Командир. 
-  ['Reymond_Holiday'] = 'Холи', -- Зам. Командира.
-  ['Satoshi_Sapporo'] = 'Сато', -- Инструктор.
+  ['Reymond_Holiday'] = 'Холи', -- Командир.
+  ['Satoshi_Sapporo'] = 'Сато', -- Зам. Командира.
   ['Ayanxkoji_Omalley'] = 'Моль', -- Инструктор.
-  
+  ['Alex_Frank'] = 'Немец', -- Инструктор.
+  ['Martin_Twix'] = 'Рассвет', -- Инструктор.
 
 -- Бойцы.
-  ['Jason_Bianchii'] = 'Лось',
+  ['Cherry_Maybach'] = 'Вишня',
   ['Jo_Bax'] = 'Бакс',
   ['Sofa_Meow'] = 'Киса',
   ['Max_Meow'] = 'Кот',
-  ['Rewazzo_Rose'] = 'Кабан',
-  ['Yukio_Matsui'] = 'Джусай',
-  ['Cherry_Maybach'] = 'Вишня',
-  ['Emily_Raylonds'] = 'Закат',
   ['Bugurslan_Lovefendi'] = 'Бур',
-  ['Andy_Fawkess'] = 'Енот',
-  ['Martin_Twix'] = 'Рассвет',
-  
-  
--- Стажеры.
-  ['Alex_Frank'] = 'Немец',
-  ['Adam_Korsa'] = 'Опер',
-  ['Foxit_Makayonok'] = 'Лис',
-  ['Rayn_Pember'] = 'Белый',
   ['Leonardo_Defoe'] = 'Топор',
-  ['Sonny_Clarck'] = 'Гриф',
-  ['Matteo_Vailant'] = 'Кобра',
-  ['Alex_Beasley'] = 'Бисля',
+  ['Adam_Korsa'] = 'Опер',
+  ['Yukio_Matsui'] = 'Джусай',
+  ['Matteo_Vaillant'] = 'Авангард',
+
+
+-- Стажеры.
+  
+  ['Alex_Beasley'] = 'Бисля', --Maurice Spaze
+  ['Maurice_Spaze'] = 'Маруся',
+  ['Ashley_Spaze'] = 'Чипс',
+  ['Shannon_Spaze'] = 'Рамос',
+  ['Charles_Spaze'] = 'Чарли',
+  ['Nika_Black'] = 'Нигга?',
+  -- [''] = '',
+  -- [''] = '',
+  -- [''] = '',
+  -- [''] = '',
+  -- [''] = '',
+  
   
 -- Резерв
-  ['Mia_Lightwood'] = 'Док',
-  ['Roberto_Karrera'] = 'Батя'
+  ['Andy_Fawkess'] = 'Енот',
+  ['Mia_Lightwood'] = 'Док'
 }
 
 function main()
