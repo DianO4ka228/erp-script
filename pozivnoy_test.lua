@@ -1,7 +1,7 @@
 --Update: Обновил позывной Наташи.
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(2.64) 						            -- Указываем версию скрипта / FINAL
+script_version(2.65) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -40,12 +40,13 @@ local nicks = { -- [''] = '',
 
 -- Стажеры.
   
-  ['Alex_Beasley'] = 'Бисля', --Maurice Spaze
+  ['Alex_Beasley'] = 'Бисля', 
   ['Maurice_Spaze'] = 'Маруся',
   ['Ashley_Spaze'] = 'Чипс',
   ['Shannon_Spaze'] = 'Рамос',
-  ['Charles_Spaze'] = 'Чарли',
-  ['Nika_Black'] = 'Нигга?',
+  ['Charles_Spaze'] = 'Чарли', 
+  ['Lautaro_Spaze'] = 'Время подумОть.',
+  ['Nika_Black'] = 'Багира',
   -- [''] = '',
   -- [''] = '',
   -- [''] = '',
