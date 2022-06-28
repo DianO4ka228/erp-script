@@ -1,7 +1,7 @@
 --Update: Обновил позывной Наташи.
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(2.70) 						            -- Указываем версию скрипта / FINAL
+script_version(2.71) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -22,7 +22,7 @@ local nicks = { -- [''] = '',
   ['Kirill_Magomedov'] = 'Мага', --Куратор
   ['Reymond_Holiday'] = 'Холи', -- Командир.
   ['Satoshi_Sapporo'] = 'Сато', -- Зам. Командира.
-  ['Foxit_Makayonok'] = 'Лис', -- Инструктор.
+  ['Foxit_Makayonok'] = 'Лис', -- Зам. Командира.
   ['Ayanxkoji_Omalley'] = 'Моль', -- Инструктор.
   ['Alex_Frank'] = 'Немец', -- Инструктор.
   ['Martin_Twix'] = 'Рассвет', -- Инструктор.
@@ -35,18 +35,18 @@ local nicks = { -- [''] = '',
   ['Max_Meow'] = 'Кот',
   ['Adam_Korsa'] = 'Опер',
   ['Yukio_Matsui'] = 'Джусай',
-  
--- Стажеры.
-  
   ['Maurice_Spaze'] = 'Маруся',
-  ['Cameron_Wayne'] = 'Зеро',
   ['Ashley_Spaze'] = 'Чипс',
   ['Shannon_Spaze'] = 'Рамос',
   ['Charles_Spaze'] = 'Чарли',
+  
+-- Стажеры.
+  ['Cameron_Wayne'] = 'Зеро',
   ['Lautaro_Spaze'] = 'Капрал',  
   ['Chloe_Spaze'] = 'Солнце',
   ['Maksim Dinosower'] = 'Снаряд',
   ['Nika_Black'] = 'Багира',
+  ['Carlos_Yeti'] = 'Тиктак',
   -- [''] = '',
   -- [''] = '',
   -- [''] = '',
