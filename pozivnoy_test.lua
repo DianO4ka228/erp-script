@@ -1,7 +1,7 @@
 --Update: Обновил позывной Наташи.
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(2.75) 						            -- Указываем версию скрипта / FINAL
+script_version(2.76) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -14,9 +14,10 @@ local dlstatus = require('moonloader').download_status
 local nicks = { -- [''] = '',
 -- 12+
   ['Andrew_Evonzer'] = 'Глиномес', -- Полковник.
-  ['Grace_Osborn'] = 'Вдова', -- Подполковник.
+  ['Grace_Osborn'] = 'Вдова', -- Полковник.
   ['Emma_Cooper'] = 'Мать', -- Подполковник.
-  ['Wurn_Linkol'] = 'Даркхолм', -- Майор.
+  ['Wurn_Linkol'] = 'Даркхолм', -- Подполковник.
+  ['Cross_Dacota'] = 'Драко', -- Майор.
 
 -- Ком. состав.
   ['Kirill_Magomedov'] = 'Мага', --Куратор
