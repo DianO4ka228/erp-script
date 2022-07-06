@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(2.80) 						            -- Указываем версию скрипта / FINAL
+script_version(2.81) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -32,11 +32,9 @@ local nicks = { -- [''] = '',
 -- Бойцы.
   ['Cherry_Maybach'] = 'Вишня',
   ['Bugurslan_Lovefendi'] = 'Бур',
-  ['Jo_Bax'] = 'Бакс',
   ['Sofa_Meow'] = 'Киса',
   ['Max_Meow'] = 'Кот',
   ['Adam_Korsa'] = 'Опер',
-  ['Yukio_Matsui'] = 'Джусай',
   ['Maurice_Spaze'] = 'Маруся',
   ['Ashley_Spaze'] = 'Чипс',
   ['Shannon_Spaze'] = 'Рамос',
@@ -46,13 +44,14 @@ local nicks = { -- [''] = '',
   ['Maksim_Dinosower'] = 'Снаряд',
   ['Nika_Black'] = 'Багира',
   ['Carlos_Yeti'] = 'Тиктак',
+  ['Jeremy_Spaze'] = 'Фрост',
   
 -- Стажеры.
-  ['Jeremy_Spaze'] = 'Фрост',
   ['Amanda_Ray'] = 'Тортик',
   ['Jacob_Washington'] = 'Кофе',
   ['Ray_Lynn'] = 'Луня',
   ['Sky_Sillence'] = 'Таеро',
+  ['Christian_Monet'] = 'Чекан',
   -- [''] = '',
   -- [''] = '',
   -- [''] = '',
