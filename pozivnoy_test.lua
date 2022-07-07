@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(2.81) 						            -- Указываем версию скрипта / FINAL
+script_version(2.82) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -21,22 +21,21 @@ local nicks = { -- [''] = '',
   ['Cross_Dacota'] = 'Драко', -- Майор.
 
 -- Ком. состав.
-  ['Kirill_Magomedov'] = 'Мага', --Куратор
+  ['Kirill_Magomedov'] = 'Мага', --Куратор.
   ['Foxit_Makayonok'] = 'Лис', -- Командир.
   ['Satoshi_Sapporo'] = 'Сато', -- Зам. Командира.
-  ['Ayanxkoji_Omalley'] = 'Моль', -- Инструктор.
-  ['Alex_Frank'] = 'Немец', -- Инструктор.
+  ['Alex_Frank'] = 'Немец', -- Зам. Командира.
   ['Martin_Twix'] = 'Рассвет', -- Инструктор.
   ['Charles_Spaze'] = 'Чарли', -- Инструктор.
-
+  ['Maurice_Spaze'] = 'Маруся', -- Инструктор.
+  -- Инструктор.
+  
 -- Бойцы.
   ['Cherry_Maybach'] = 'Вишня',
-  ['Bugurslan_Lovefendi'] = 'Бур',
   ['Sofa_Meow'] = 'Киса',
   ['Max_Meow'] = 'Кот',
-  ['Adam_Korsa'] = 'Опер',
-  ['Maurice_Spaze'] = 'Маруся',
-  ['Ashley_Spaze'] = 'Чипс',
+  ['Ayanxkoji_Omalley'] = 'Моль',
+  ['Ashley_Spaze'] = 'Серый',
   ['Shannon_Spaze'] = 'Рамос',
   ['Cameron_Wayne'] = 'Зеро',
   ['Lautaro_Spaze'] = 'Капрал', 
@@ -52,6 +51,7 @@ local nicks = { -- [''] = '',
   ['Ray_Lynn'] = 'Луня',
   ['Sky_Sillence'] = 'Таеро',
   ['Christian_Monet'] = 'Чекан',
+  ['Hawii_Tearz'] = 'Шаха',
   -- [''] = '',
   -- [''] = '',
   -- [''] = '',
