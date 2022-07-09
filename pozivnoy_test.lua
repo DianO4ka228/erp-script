@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(2.83) 						            -- Указываем версию скрипта / FINAL
+script_version(2.84) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -29,7 +29,6 @@ local nicks = { -- [''] = '',
   ['Charles_Spaze'] = 'Чарли', -- Инструктор.
   ['Maurice_Spaze'] = 'Маруся', -- Инструктор.
   ['Nika_Black'] = 'Багира', -- Инструктор.
-  -- Инструктор.
   
 -- Бойцы.
   ['Cherry_Maybach'] = 'Вишня',
@@ -43,14 +42,15 @@ local nicks = { -- [''] = '',
   ['Chloe_Spaze'] = 'Солнце',
   ['Carlos_Yeti'] = 'Тиктак',
   ['Jeremy_Spaze'] = 'Фрост',
-  
--- Стажеры.
   ['Amanda_Ray'] = 'Тортик',
   ['Jacob_Washington'] = 'Кофе',
+  
+-- Стажеры.
   ['Ray_Lynn'] = 'Луня',
   ['Sky_Sillence'] = 'Таеро',
   ['Christian_Monet'] = 'Чекан',
   ['Hawii_Tearz'] = 'Шаха',
+  ['Siegmund_Berg'] = 'Зодд',
   -- [''] = '',
   -- [''] = '',
   -- [''] = '',
