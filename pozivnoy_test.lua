@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(2.84) 						            -- Указываем версию скрипта / FINAL
+script_version(2.85) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -18,10 +18,10 @@ local nicks = { -- [''] = '',
   ['Grace_Osborn'] = 'Вдова', -- Полковник.
   ['Emma_Cooper'] = 'Мать', -- Подполковник.
   ['Wurn_Linkol'] = 'Даркхолм', -- Подполковник.
-  ['Cross_Dacota'] = 'Драко', -- Майор.
+  ['Kirill_Magomedov'] = 'Мага', -- Майор.
 
 -- Ком. состав.
-  ['Kirill_Magomedov'] = 'Мага', --Куратор.
+   --Куратор.
   ['Foxit_Makayonok'] = 'Лис', -- Командир.
   ['Satoshi_Sapporo'] = 'Сато', -- Зам. Командира.
   ['Alex_Frank'] = 'Немец', -- Зам. Командира.
@@ -44,13 +44,13 @@ local nicks = { -- [''] = '',
   ['Jeremy_Spaze'] = 'Фрост',
   ['Amanda_Ray'] = 'Тортик',
   ['Jacob_Washington'] = 'Кофе',
+  ['Sky_Sillence'] = 'Таеро',
   
 -- Стажеры.
-  ['Ray_Lynn'] = 'Луня',
-  ['Sky_Sillence'] = 'Таеро',
   ['Christian_Monet'] = 'Чекан',
   ['Hawii_Tearz'] = 'Шаха',
   ['Siegmund_Berg'] = 'Зодд',
+  ['Aiden_Florestino'] = 'Призрак',
   -- [''] = '',
   -- [''] = '',
   -- [''] = '',
