@@ -11,7 +11,7 @@ local dlstatus = require('moonloader').download_status
 
 
 -- Позывные
-local nicks =  -- [''] = '',
+local nicks = { -- [''] = '',
 -- 12+
   ['Yupi_Mean'] = 'Юпик', -- Полковник.
   ['Andrew_Evonzer'] = 'Глиномес', -- Полковник.
