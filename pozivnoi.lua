@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(2.93) 						            -- Указываем версию скрипта / FINAL
+script_version(2.94) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -34,16 +34,12 @@ local nicks = { -- [''] = '',
   ['Cherry_Maybach'] = 'Вишня',
   ['Sofa_Meow'] = 'Киса',
   ['Max_Meow'] = 'Кот',
-  ['Ayanxkoji_Omalley'] = 'Моль',
+  ['Andy_Fawkess'] = 'Енот',
   ['Ashley_Spaze'] = 'Серый',
-  ['Shannon_Spaze'] = 'Рамос',
   ['Cameron_Wayne'] = 'Зеро',
   ['Lautaro_Spaze'] = 'Капрал', 
-  ['Chloe_Spaze'] = 'Солнце',
-  ['Carlos_Yeti'] = 'Тиктак',
   ['Jeremy_Spaze'] = 'Фрост',
   ['Alex_Beasley'] = 'Бисля',
-  ['Amanda_Ray'] = 'Тортик',
   ['Jacob_Washington'] = 'Кофе',
   ['Sky_Sillence'] = 'Таеро',
   ['Hawii_Tearz'] = 'Шаха',
@@ -64,7 +60,9 @@ local nicks = { -- [''] = '',
   
   
 -- Резерв
-  ['Andy_Fawkess'] = 'Енот',
+  ['Shannon_Spaze'] = 'Рамос',
+  ['Amanda_Ray'] = 'Тортик',
+  ['Chloe_Spaze'] = 'Солнце',
   ['Ayanxkoji_Omalley'] = 'Моль'
 }
 
