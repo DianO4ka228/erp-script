@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(2.97) 						            -- Указываем версию скрипта / FINAL
+script_version(2.98) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -22,25 +22,25 @@ local nicks = { -- [''] = '',
 
 -- Ком. состав.
   ['Satoshi_Sapporo'] = 'Сато', --Куратор.
-  ['Foxit_Makayonok'] = 'Лис', -- Командир.
-  -- Зам. Командира.
-  ['Alex_Frank'] = 'Немец', -- Зам. Командира.
-  ['Martin_Twix'] = 'Рассвет', -- Инструктор.
+  ['Alex_Frank'] = 'Немец', -- Командир.
+  ['Nika_Black'] = 'Багира', -- Зам. Командира.
+   -- Зам. Командира.
   ['Charles_Spaze'] = 'Чарли', -- Инструктор.
   ['Maurice_Spaze'] = 'Маруся', -- Инструктор.
-  ['Nika_Black'] = 'Багира', -- Инструктор.
+  ['Sky_Sillence'] = 'Таеро', -- Инструктор.
+   -- Инструктор.
   
 -- Бойцы.
   ['Cherry_Maybach'] = 'Вишня',
+  ['Foxit_Makayonok'] = 'Лис',
+  ['Martin_Twix'] = 'Рассвет',
   ['Sofa_Meow'] = 'Киса',
   ['Max_Meow'] = 'Кот',
   ['Andy_Fawkess'] = 'Енот',
   ['Ashley_Spaze'] = 'Серый',
-  ['Cameron_Wayne'] = 'Зеро',
   ['Lautaro_Spaze'] = 'Капрал', 
   ['Jeremy_Spaze'] = 'Фрост',
   ['Alex_Beasley'] = 'Бисля',
-  ['Sky_Sillence'] = 'Таеро',
   ['Hawii_Tearz'] = 'Шаха',
   
 -- Стажеры.
