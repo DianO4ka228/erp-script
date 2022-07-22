@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(2.98) 						            -- Указываем версию скрипта / FINAL
+script_version(2.99) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -31,19 +31,14 @@ local nicks = { -- [''] = '',
    -- Инструктор.
   
 -- Бойцы.
-  ['Cherry_Maybach'] = 'Вишня',
   ['Foxit_Makayonok'] = 'Лис',
-  ['Martin_Twix'] = 'Рассвет',
   ['Sofa_Meow'] = 'Киса',
   ['Max_Meow'] = 'Кот',
-  ['Andy_Fawkess'] = 'Енот',
   ['Ashley_Spaze'] = 'Серый',
   ['Lautaro_Spaze'] = 'Капрал', 
   ['Jeremy_Spaze'] = 'Фрост',
   ['Alex_Beasley'] = 'Бисля',
   ['Hawii_Tearz'] = 'Шаха',
-  
--- Стажеры.
   ['Siegmund_Berg'] = 'Зодд',
   ['Aiden_Florestino'] = 'Призрак',
   ['Anthony_Diez'] = 'Медведь',
@@ -52,19 +47,14 @@ local nicks = { -- [''] = '',
   ['Walter_Moonlight'] = 'Мун',
   ['Kenjiro_Matsukawa'] = 'Клён',
   ['Ashton_Beasley'] = 'Ашот',
-  ['Monica_Rodgers'] = 'Злюка',
-  -- [''] = '',
-  -- [''] = '',
-  -- [''] = '',
-  -- [''] = '',
-  -- [''] = '',
-  
-  
--- Резерв
   ['Shannon_Spaze'] = 'Рамос',
   ['Amanda_Ray'] = 'Тортик',
   ['Chloe_Spaze'] = 'Солнце',
-  ['Ayanxkoji_Omalley'] = 'Моль'
+  ['Ayanxkoji_Omalley'] = 'Моль',
+  
+-- Стажеры.
+  ['Comtonia_Oceguera'] = 'Компот',
+  ['Dini_Raksize'] = 'Дино'
 }
 
 function main()
