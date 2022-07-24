@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(3.00) 						            -- Указываем версию скрипта / FINAL
+script_version(3.01) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -24,10 +24,11 @@ local nicks = { -- [''] = '',
   ['Satoshi_Sapporo'] = 'Сато', --Куратор.
   ['Alex_Frank'] = 'Немец', -- Командир.
   ['Nika_Black'] = 'Багира', -- Зам. Командира.
+  ['Maurice_Spaze'] = 'Маруся', -- Зам. Командира.
    -- Зам. Командира.
-  ['Charles_Spaze'] = 'Чарли', -- Инструктор.
-  ['Maurice_Spaze'] = 'Маруся', -- Инструктор.
+  ['Sergey_Fibo'] = 'Панда', -- Инструктор.
   ['Sky_Sillence'] = 'Таеро', -- Инструктор.
+   -- Инструктор.
    -- Инструктор.
   
 -- Бойцы.
@@ -42,7 +43,6 @@ local nicks = { -- [''] = '',
   ['Siegmund_Berg'] = 'Зодд',
   ['Aiden_Florestino'] = 'Призрак',
   ['Anthony_Diez'] = 'Медведь',
-  ['Sergey_Fibo'] = 'Панда',
   ['Kwenyt_Hokage'] = 'Скорпион',
   ['Walter_Moonlight'] = 'Мун',
   ['Kenjiro_Matsukawa'] = 'Клён',
@@ -55,7 +55,8 @@ local nicks = { -- [''] = '',
 -- Стажеры.
   ['Comtonia_Oceguera'] = 'Компот',
   ['Makar_Ryabov'] = 'Чех',
-  ['Dini_Raksize'] = 'Дино'
+  ['Dini_Raksize'] = 'Дино',
+  ['Blayzex_Stoun'] = 'Джамбо'
 }
 
 function main()
