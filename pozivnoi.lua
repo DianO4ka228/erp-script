@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(3.05) 						            -- Указываем версию скрипта / FINAL
+script_version(3.06) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -38,7 +38,6 @@ local nicks = { -- [''] = '',
   ['Ashley_Spaze'] = 'Серый',
   ['Lautaro_Spaze'] = 'Капрал', 
   ['Jeremy_Spaze'] = 'Фрост',
-  ['Alex_Beasley'] = 'Бисля',
   ['Hawii_Tearz'] = 'Шаха',
   ['Nora_Schneider'] = 'Трюфель',
   ['Siegmund_Berg'] = 'Зодд',
