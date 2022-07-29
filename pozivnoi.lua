@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(3.06) 						            -- Указываем версию скрипта / FINAL
+script_version(3.07) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -13,23 +13,20 @@ local dlstatus = require('moonloader').download_status
 -- Позывные
 local nicks = { -- [''] = '',
 -- 12+
-  ['Yupi_Mean'] = 'Юпик', -- Полковник.
-  ['Andrew_Evonzer'] = 'Глиномес', -- Полковник.
+  ['Yupi_Mean'] = 'Юпик', -- Генерал.
   ['Grace_Osborn'] = 'Вдова', -- Полковник.
-  ['Emma_Cooper'] = 'Мать', -- Подполковник.
+  ['Emma_Cooper'] = 'Мать', -- Полковник.
   ['Wurn_Linkol'] = 'Даркхолм', -- Подполковник.
+  ['Cross_Dacota'] = 'Драко', -- Подполковник.
   ['Kirill_Magomedov'] = 'Мага', -- Майор.
 
 -- Ком. состав.
   ['Satoshi_Sapporo'] = 'Сато', --Куратор.
   ['Alex_Frank'] = 'Немец', -- Командир.
   ['Nika_Black'] = 'Багира', -- Зам. Командира.
-  ['Maurice_Spaze'] = 'Маруся', -- Зам. Командира.
-   -- Зам. Командира.
   ['Sergey_Fibo'] = 'Панда', -- Инструктор.
   ['Sky_Sillence'] = 'Таеро', -- Инструктор.
   ['Kwenyt_Hokage'] = 'Скорпион', -- Инструктор.
-   -- Инструктор.
   
 -- Бойцы.
   ['Foxit_Makayonok'] = 'Лис',
@@ -51,11 +48,12 @@ local nicks = { -- [''] = '',
   ['Ayanxkoji_Omalley'] = 'Моль',
   ['Dini_Raksize'] = 'Дино',
   ['Comtonia_Oceguera'] = 'Компот',
-  
--- Стажеры.
   ['Makar_Ryabov'] = 'Чех',
   ['Blayzex_Stoun'] = 'Джамбо',
-  ['Sibewest_Silence'] = 'Новик'
+  
+-- Стажеры.
+  ['Sibewest_Silence'] = 'Новик',
+  ['Azim_Kenes'] = 'Фантом'
 }
 
 function main()
