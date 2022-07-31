@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(3.08) 						            -- Указываем версию скрипта / FINAL
+script_version(3.09) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -18,13 +18,13 @@ local nicks = { -- [''] = '',
   ['Emma_Cooper'] = 'Мать', -- Полковник.
   ['Wurn_Linkol'] = 'Даркхолм', -- Подполковник.
   ['Cross_Dacota'] = 'Драко', -- Подполковник.
-   -- Майор.
+  ['Kirill_Magomedov'] = 'Мага', -- Майор.
 
 -- Ком. состав.
   ['Satoshi_Sapporo'] = 'Сато', --Куратор.
-  ['Kirill_Magomedov'] = 'Мага', -- Командир.
+   -- Командир.
   ['Nika_Black'] = 'Багира', -- Зам. Командира.
-  ['Sergey_Fibo'] = 'Панда', -- Инструктор.
+  ['Sergey_Fibo'] = 'Панда', -- Зам. Командира.
   ['Sky_Sillence'] = 'Таеро', -- Инструктор.
   ['Kwenyt_Hokage'] = 'Скорпион', -- Инструктор.
   
@@ -54,7 +54,8 @@ local nicks = { -- [''] = '',
   ['Sibewest_Silence'] = 'Сало',
   
 -- Стажеры.
-  ['Azim_Kenes'] = 'Фантом'
+  ['Azim_Kenes'] = 'Фантом',
+  ['Christian_Monet'] = 'Монета'
 }
 
 function main()
