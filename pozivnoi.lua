@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(3.07) 						            -- Указываем версию скрипта / FINAL
+script_version(3.08) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -18,11 +18,11 @@ local nicks = { -- [''] = '',
   ['Emma_Cooper'] = 'Мать', -- Полковник.
   ['Wurn_Linkol'] = 'Даркхолм', -- Подполковник.
   ['Cross_Dacota'] = 'Драко', -- Подполковник.
-  ['Kirill_Magomedov'] = 'Мага', -- Майор.
+   -- Майор.
 
 -- Ком. состав.
   ['Satoshi_Sapporo'] = 'Сато', --Куратор.
-  ['Alex_Frank'] = 'Немец', -- Командир.
+  ['Kirill_Magomedov'] = 'Мага', -- Командир.
   ['Nika_Black'] = 'Багира', -- Зам. Командира.
   ['Sergey_Fibo'] = 'Панда', -- Инструктор.
   ['Sky_Sillence'] = 'Таеро', -- Инструктор.
@@ -30,6 +30,7 @@ local nicks = { -- [''] = '',
   
 -- Бойцы.
   ['Foxit_Makayonok'] = 'Лис',
+  ['Alex_Frank'] = 'Немец',
   ['Sofa_Meow'] = 'Киса',
   ['Max_Meow'] = 'Кот',
   ['Ashley_Spaze'] = 'Серый',
@@ -50,9 +51,9 @@ local nicks = { -- [''] = '',
   ['Comtonia_Oceguera'] = 'Компот',
   ['Makar_Ryabov'] = 'Чех',
   ['Blayzex_Stoun'] = 'Джамбо',
+  ['Sibewest_Silence'] = 'Сало',
   
 -- Стажеры.
-  ['Sibewest_Silence'] = 'Новик',
   ['Azim_Kenes'] = 'Фантом'
 }
 
