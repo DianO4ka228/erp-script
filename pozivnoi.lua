@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(3.15) 						            -- Указываем версию скрипта / FINAL
+script_version(3.16) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -16,51 +16,39 @@ local nicks = { -- [''] = '',
   ['Yupi_Mean'] = 'Юпик', -- Генерал.
   ['Grace_Osborn'] = 'Вдова', -- Полковник.
   ['Emma_Cooper'] = 'Мать', -- Полковник.
-  ['Wurn_Linkol'] = 'Даркхолм', -- Подполковник.
+  ['Wurn_Linkol'] = 'Даркхолм', -- Полковник.
   ['Cross_Dacota'] = 'Драко', -- Подполковник.
   ['Kirill_Magomedov'] = 'Мага', -- Майор.
 
 -- Ком. состав.
   ['Satoshi_Sapporo'] = 'Сато', --Куратор.
-   -- Командир.
-  ['Nika_Black'] = 'Багира', -- Зам. Командира.
+  ['Nika_Black'] = 'Багира', -- Командир.
+   -- Зам. Командира.
   ['Sergey_Fibo'] = 'Панда', -- Зам. Командира.
   ['Sky_Sillence'] = 'Таеро', -- Инструктор.
   ['Kwenyt_Hokage'] = 'Скорпион', -- Инструктор.
+  ['Blayzex_Stoun'] = 'Джамбо', -- Инструктор.
   
 -- Бойцы.
   ['Foxit_Makayonok'] = 'Лис',
   ['Alex_Frank'] = 'Немец',
-  ['Sofa_Meow'] = 'Киса',
-  ['Max_Meow'] = 'Кот',
-  ['Ashley_Spaze'] = 'Серый',
-  ['Lautaro_Spaze'] = 'Капрал', 
-  ['Jeremy_Spaze'] = 'Фрост',
   ['Hawii_Tearz'] = 'Шаха',
-  ['Siegmund_Berg'] = 'Зодд',
   ['Aiden_Florestino'] = 'Призрак',
   ['Anthony_Diez'] = 'Медведь',
-  ['Walter_Moonlight'] = 'Мун',
-  ['Kenjiro_Matsukawa'] = 'Клён',
   ['Ashton_Beasley'] = 'Ашот',
-  ['Shannon_Spaze'] = 'Рамос',
-  ['Chloe_Spaze'] = 'Солнце',
-  ['Ayanxkoji_Omalley'] = 'Моль',
   ['Dini_Raksize'] = 'Дино',
   ['Comtonia_Oceguera'] = 'Компот',
   ['Makar_Ryabov'] = 'Чех',
-  ['Blayzex_Stoun'] = 'Джамбо',
   ['Sibewest_Silence'] = 'Сало',
-  
--- Стажеры.
+  ['Suleyman_Zelimxanov'] = 'Скандал',
   ['Azim_Kenes'] = 'Фантом',
   ['Kirill_Shatunov'] = 'Север',
   ['Chris_Ludvig'] = 'Янки',
+  
+-- Стажеры.
   ['Calvin_Espinozzi'] = 'Ноззи',
-  ['Suleyman_Zelimxanov'] = 'Скандал',
   ['Henry_Markano'] = 'Ханк',
-  ['Jason_Storm'] = 'Шторм',
-  ['Christian_Monet'] = 'Монета'
+  ['Jason_Storm'] = 'Шторм'
 }
 
 function main()
