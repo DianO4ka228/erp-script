@@ -1,7 +1,7 @@
 --Update: ќбновил позывные/состав
 -- »нформаци€ о скрипте
 script_name('ЂAuto-Dokladї') 		                    -- ”казываем им€ скрипта
-script_version(3.21) 						            -- ”казываем версию скрипта / FINAL
+script_version(3.22) 						            -- ”казываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- ”казываем им€ автора
 
 -- Ѕиблиотеки
@@ -54,6 +54,7 @@ local nicks = { -- [''] = '',
   ['Candy_Dope'] = 'Ёкстази',
   ['Gabriel_Olimpov'] = 'Ѕлу',
   ['Near_River'] = 'ѕерсик',
+  ['Shane_Prix'] = 'ќрлик',
   ['Jo_Bax'] = 'Ѕакс'
 }
 
