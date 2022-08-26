@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(3.32) 						            -- Указываем версию скрипта / FINAL
+script_version(3.33) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -22,12 +22,12 @@ local nicks = { -- [''] = '',
 
 -- Ком. состав.
   ['Alex_Frank'] = 'Немец', --Куратор.
-  ['Sergey_Fibo'] = 'Панда', -- Командир.
+  ['Blayzex_Stoun''] = 'Джамбо', -- Командир.
    -- Зам. Командира.
   ['Suetlan Zelimxanov'] = 'Суета', -- Зам. Командира.
   ['Sky_Sillence'] = 'Таеро', -- Инструктор.
   [''] = '', -- Инструктор.
-  ['Blayzex_Stoun'] = 'Джамбо', -- Инструктор.
+  [''] = '', -- Инструктор.
   
 -- Бойцы.
   ['Foxit_Makayonok'] = 'Лис',
@@ -36,7 +36,7 @@ local nicks = { -- [''] = '',
   ['Anthony_Diez'] = 'Медведь',
   ['Ashton_Beasley'] = 'Ашот',
   ['Dini_Raksize'] = 'Дино',
-  ['Comtonia_Oceguera'] = 'Компот',
+  [''] = '',
   ['Makar_Ryabov'] = 'Чех',
   ['Sibewest_Silence'] = 'Сало',
   ['Suleyman_Zelimxanov'] = 'Скандал',
