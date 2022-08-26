@@ -134,7 +134,7 @@ end
 -- Авто-обновление
 function updateScript()
 	local filepath = os.getenv('TEMP') .. '\\online-update.json'
-	downloadUrlToFile('https://raw.githubusercontent.com/DianO4ka228/123/main/online-update.json', filepath, function(id, status, p1, p2)
+	downloadUrlToFile('https://raw.githubusercontent.com/Enotiwe/erp-script/main/online-update.json', filepath, function(id, status, p1, p2)
 		if status == dlstatus.STATUS_ENDDOWNLOADDATA then
 			local file = io.open(filepath, 'r')
 			if file then
