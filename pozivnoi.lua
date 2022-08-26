@@ -1,81 +1,79 @@
---Update: Обновил позывные/состав
--- Информация о скрипте
-script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(3.25) 						            -- Указываем версию скрипта / FINAL
-script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
+--Update: РћР±РЅРѕРІРёР» РїРѕР·С‹РІРЅС‹Рµ/СЃРѕСЃС‚Р°РІ
+-- РРЅС„РѕСЂРјР°С†РёСЏ Рѕ СЃРєСЂРёРїС‚Рµ
+script_name('В«Auto-DokladВ»') 		                    -- РЈРєР°Р·С‹РІР°РµРј РёРјСЏ СЃРєСЂРёРїС‚Р°
+script_version(3.28) 						            -- РЈРєР°Р·С‹РІР°РµРј РІРµСЂСЃРёСЋ СЃРєСЂРёРїС‚Р° / FINAL
+script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- РЈРєР°Р·С‹РІР°РµРј РёРјСЏ Р°РІС‚РѕСЂР°
 
--- Библиотеки
+-- Р‘РёР±Р»РёРѕС‚РµРєРё
 require 'lib.moonloader'
 require 'lib.sampfuncs'
 local dlstatus = require('moonloader').download_status
 
 
--- Позывные
+-- РџРѕР·С‹РІРЅС‹Рµ
 local nicks = { -- [''] = '',
 -- 12+
-  ['Yupi_Mean'] = 'Юпик', -- Генерал.
-  ['Grace_Osborn'] = 'Вдова', -- Полковник.
-  ['Emma_Cooper'] = 'Мать', -- Полковник.
-  ['Wurn_Linkol'] = 'Даркхолм', -- Полковник.
-  ['Cross_Dacota'] = 'Драко', -- Подполковник.
-  ['Kirill_Magomedov'] = 'Мага', -- Майор.
+  ['Yupi_Mean'] = 'Р®РїРёРє', -- Р“РµРЅРµСЂР°Р».
+  ['Grace_Osborn'] = 'Р’РґРѕРІР°', -- РџРѕР»РєРѕРІРЅРёРє.
+  ['Emma_Cooper'] = 'РњР°С‚СЊ', -- РџРѕР»РєРѕРІРЅРёРє.
+  ['Wurn_Linkol'] = 'Р”Р°СЂРєС…РѕР»Рј', -- РџРѕР»РєРѕРІРЅРёРє.
+  ['Cross_Dacota'] = 'Р”СЂР°РєРѕ', -- РџРѕРґРїРѕР»РєРѕРІРЅРёРє.
+  ['Vlad_Werber'] = 'РћРєСѓРЅСЊ', -- РњР°Р№РѕСЂ.
 
--- Ком. состав.
-  ['Satoshi_Sapporo'] = 'Сато', --Куратор.
-  ['Nika_Black'] = 'Багира', -- Командир.
-   -- Зам. Командира.
-  ['Sergey_Fibo'] = 'Панда', -- Зам. Командира.
-  ['Sky_Sillence'] = 'Таеро', -- Инструктор.
-  ['Kwenyt_Hokage'] = 'Скорпион', -- Инструктор.
-  ['Blayzex_Stoun'] = 'Джамбо', -- Инструктор.
+-- РљРѕРј. СЃРѕСЃС‚Р°РІ.
+  ['Alex_Frank'] = 'РќРµРјРµС†', --РљСѓСЂР°С‚РѕСЂ.
+  ['Sergey_Fibo'] = 'РџР°РЅРґР°', -- РљРѕРјР°РЅРґРёСЂ.
+   -- Р—Р°Рј. РљРѕРјР°РЅРґРёСЂР°.
+  ['Suetlan Zelimxanov'] = 'РЎСѓРµС‚Р°', -- Р—Р°Рј. РљРѕРјР°РЅРґРёСЂР°.
+  ['Sky_Sillence'] = 'РўР°РµСЂРѕ', -- РРЅСЃС‚СЂСѓРєС‚РѕСЂ.
+  ['Kwenyt_Hokage'] = 'РЎРєРѕСЂРїРёРѕРЅ', -- РРЅСЃС‚СЂСѓРєС‚РѕСЂ.
+  ['Blayzex_Stoun'] = 'Р”Р¶Р°РјР±Рѕ', -- РРЅСЃС‚СЂСѓРєС‚РѕСЂ.
   
--- Бойцы.
-  ['Foxit_Makayonok'] = 'Лис',
-  ['Alex_Frank'] = 'Немец',
-  ['Hawii_Tearz'] = 'Шаха',
-  ['Aiden_Florestino'] = 'Призрак',
-  ['Anthony_Diez'] = 'Медведь',
-  ['Ashton_Beasley'] = 'Ашот',
-  ['Dini_Raksize'] = 'Дино',
-  ['Comtonia_Oceguera'] = 'Компот',
-  ['Makar_Ryabov'] = 'Чех',
-  ['Sibewest_Silence'] = 'Сало',
-  ['Suleyman_Zelimxanov'] = 'Скандал',
-  ['Azim_Kenes'] = 'Фантом',
-  ['Kirill_Shatunov'] = 'Север',
-  ['Chris_Ludvig'] = 'Янки',
-  ['Jason_Storm'] = 'Шторм',
+-- Р‘РѕР№С†С‹.
+  ['Foxit_Makayonok'] = 'Р›РёСЃ',
+  ['Hawii_Tearz'] = 'РЁР°С…Р°',
+  ['Aiden_Florestino'] = 'РџСЂРёР·СЂР°Рє',
+  ['Anthony_Diez'] = 'РњРµРґРІРµРґСЊ',
+  ['Ashton_Beasley'] = 'РђС€РѕС‚',
+  ['Dini_Raksize'] = 'Р”РёРЅРѕ',
+  ['Comtonia_Oceguera'] = 'РљРѕРјРїРѕС‚',
+  ['Makar_Ryabov'] = 'Р§РµС…',
+  ['Sibewest_Silence'] = 'РЎР°Р»Рѕ',
+  ['Suleyman_Zelimxanov'] = 'РЎРєР°РЅРґР°Р»',
+  ['Azim_Kenes'] = 'Р¤Р°РЅС‚РѕРј',
+  ['Till_Cunningham'] = 'РњСѓСЂ',
+  ['Chris_Ludvig'] = 'РЇРЅРєРё',
+  ['Jason_Storm'] = 'РЁС‚РѕСЂРј',
   
--- Стажеры.
-  ['Calvin_Espinozzi'] = 'Ноззи',
-  ['Henry_Markano'] = 'Ханк',
-  ['Sofiya_Murphy'] = 'Смурф',
-  ['Tenebrise_Moon'] = 'Луна',
-  ['Candy_Dope'] = 'Экстази',
-  ['Gabriel_Olimpov'] = 'Блу',
-  ['Near_Alpinstar'] = 'Персик',
-  ['Shane_Prix'] = 'Орлик',
-  ['Mikola_Korenivskyi'] = 'Гост',
-  ['Salazar_Black'] = 'Фенрир',
-  ['Jo_Bax'] = 'Бакс'
+-- РЎС‚Р°Р¶РµСЂС‹.
+  ['Calvin_Espinozzi'] = 'РќРѕР·Р·Рё',
+  ['Henry_Markano'] = 'РҐР°РЅРє',
+  ['Sofiya_Murphy'] = 'РЎРјСѓСЂС„',
+  ['William_Lattice'] = 'Р РѕР»РµРєСЃ',
+  ['Gabriel_Olimpov'] = 'Р‘Р»Сѓ',
+  ['Near_Alpinstar'] = 'РџРµСЂСЃРёРє',
+  ['Shane_Prix'] = 'РћСЂР»РёРє',
+  ['Aleks_Bichovski'] = 'РЁР°С‚Р°Р№',
+  ['Salazar_Black'] = 'Р¤РµРЅСЂРёСЂ',
+  ['Jo_Bax'] = 'Р‘Р°РєСЃ'
 }
 
 function main()
   
-  -- Проверяем загружен ли sampfuncs и SAMP если не загружены - возвращаемся к началу
+  -- РџСЂРѕРІРµСЂСЏРµРј Р·Р°РіСЂСѓР¶РµРЅ Р»Рё sampfuncs Рё SAMP РµСЃР»Рё РЅРµ Р·Р°РіСЂСѓР¶РµРЅС‹ - РІРѕР·РІСЂР°С‰Р°РµРјСЃСЏ Рє РЅР°С‡Р°Р»Сѓ
 	if not isSampfuncsLoaded() or not isSampLoaded() then return end
-  -- Проверяем загружен ли SA-MP
+  -- РџСЂРѕРІРµСЂСЏРµРј Р·Р°РіСЂСѓР¶РµРЅ Р»Рё SA-MP
 	while not isSampAvailable() do wait(100) end
-  -- Сообщаем об загрузке скрипта
-  stext('Скрипт успешно загружен!')
+  -- РЎРѕРѕР±С‰Р°РµРј РѕР± Р·Р°РіСЂСѓР·РєРµ СЃРєСЂРёРїС‚Р°
+  stext('РЎРєСЂРёРїС‚ СѓСЃРїРµС€РЅРѕ Р·Р°РіСЂСѓР¶РµРЅ!')
   
-  -- Регистрируем команду
+  -- Р РµРіРёСЃС‚СЂРёСЂСѓРµРј РєРѕРјР°РЅРґСѓ
   sampRegisterChatCommand('dok', cmd_dok)
-  -- Проверяем зашёл ли игрок на сервер
+  -- РџСЂРѕРІРµСЂСЏРµРј Р·Р°С€С‘Р» Р»Рё РёРіСЂРѕРє РЅР° СЃРµСЂРІРµСЂ
 	while not sampIsLocalPlayerSpawned() do wait(0) end
-	-- Проверка на автозагрузку.
+	-- РџСЂРѕРІРµСЂРєР° РЅР° Р°РІС‚РѕР·Р°РіСЂСѓР·РєСѓ.
   updateScript()
-  -- Бесконечный цикл для постоянной работы скрипта
+  -- Р‘РµСЃРєРѕРЅРµС‡РЅС‹Р№ С†РёРєР» РґР»СЏ РїРѕСЃС‚РѕСЏРЅРЅРѕР№ СЂР°Р±РѕС‚С‹ СЃРєСЂРёРїС‚Р°
   while true do
     wait(0)
   end
@@ -114,29 +112,29 @@ function cmd_dok(args)
         sampProcessChatInput(string.format('/r 10-%s, solo.', args))
       end
     else
-      atext('{808080}Информация | {FFFFFF}Введите: /dok тен-код.')
+      atext('{808080}РРЅС„РѕСЂРјР°С†РёСЏ | {FFFFFF}Р’РІРµРґРёС‚Рµ: /dok С‚РµРЅ-РєРѕРґ.')
       return
     end
   else
-    atext('{808080}Ошибка | {FFFFFF}Вы не сидите в транспорте.')
+    atext('{808080}РћС€РёР±РєР° | {FFFFFF}Р’С‹ РЅРµ СЃРёРґРёС‚Рµ РІ С‚СЂР°РЅСЃРїРѕСЂС‚Рµ.')
     return
   end
 end
 
--- «Auto-Report» text
+-- В«Auto-ReportВ» text
 function stext(text)
   sampAddChatMessage((' %s {FFFFFF}%s'):format(script.this.name, text), 0xABAFDE)
 end
 
--- » text
+-- В» text
 function atext(text)
-	sampAddChatMessage((' » {FFFFFF}%s'):format(text), 0xABAFDE)
+	sampAddChatMessage((' В» {FFFFFF}%s'):format(text), 0xABAFDE)
 end
 
--- Авто-обновление
+-- РђРІС‚Рѕ-РѕР±РЅРѕРІР»РµРЅРёРµ
 function updateScript()
 	local filepath = os.getenv('TEMP') .. '\\online-update.json'
-	downloadUrlToFile('https://raw.githubusercontent.com/Enotiwe/erp-script/main/online-update.json', filepath, function(id, status, p1, p2)
+	downloadUrlToFile('https://raw.githubusercontent.com/DianO4ka228/123/main/online-update.json', filepath, function(id, status, p1, p2)
 		if status == dlstatus.STATUS_ENDDOWNLOADDATA then
 			local file = io.open(filepath, 'r')
 			if file then
@@ -145,17 +143,17 @@ function updateScript()
 				if info and info.latest then
 					if tonumber(thisScript().version) < tonumber(info.latest) then
 						lua_thread.create(function()
-							print('Началось скачивание обновления. Скрипт перезагрузится через пару секунд.')
+							print('РќР°С‡Р°Р»РѕСЃСЊ СЃРєР°С‡РёРІР°РЅРёРµ РѕР±РЅРѕРІР»РµРЅРёСЏ. РЎРєСЂРёРїС‚ РїРµСЂРµР·Р°РіСЂСѓР·РёС‚СЃСЏ С‡РµСЂРµР· РїР°СЂСѓ СЃРµРєСѓРЅРґ.')
 							wait(300)
 							downloadUrlToFile(updatelink, thisScript().path, function(id3, status1, p13, p23)
-								if status1 == dlstatus.STATUS_ENDDOWNLOADDATA then print('Обновление успешно скачано и установлено.')
-								elseif status1 == 64 then print('Обновление успешно скачано и установлено.')
+								if status1 == dlstatus.STATUS_ENDDOWNLOADDATA then print('РћР±РЅРѕРІР»РµРЅРёРµ СѓСЃРїРµС€РЅРѕ СЃРєР°С‡Р°РЅРѕ Рё СѓСЃС‚Р°РЅРѕРІР»РµРЅРѕ.')
+								elseif status1 == 64 then print('РћР±РЅРѕРІР»РµРЅРёРµ СѓСЃРїРµС€РЅРѕ СЃРєР°С‡Р°РЅРѕ Рё СѓСЃС‚Р°РЅРѕРІР»РµРЅРѕ.')
 								end
 							end)
 						end)
-					else print('Обновлений скрипта не обнаружено.') end
+					else print('РћР±РЅРѕРІР»РµРЅРёР№ СЃРєСЂРёРїС‚Р° РЅРµ РѕР±РЅР°СЂСѓР¶РµРЅРѕ.') end
 				end
-			else print('Проверка обновления прошла неуспешно. Запускаю старую версию.') end
-		elseif status == 64 then print('Проверка обновления прошла неуспешно. Запускаю старую версию.') end
+			else print('РџСЂРѕРІРµСЂРєР° РѕР±РЅРѕРІР»РµРЅРёСЏ РїСЂРѕС€Р»Р° РЅРµСѓСЃРїРµС€РЅРѕ. Р—Р°РїСѓСЃРєР°СЋ СЃС‚Р°СЂСѓСЋ РІРµСЂСЃРёСЋ.') end
+		elseif status == 64 then print('РџСЂРѕРІРµСЂРєР° РѕР±РЅРѕРІР»РµРЅРёСЏ РїСЂРѕС€Р»Р° РЅРµСѓСЃРїРµС€РЅРѕ. Р—Р°РїСѓСЃРєР°СЋ СЃС‚Р°СЂСѓСЋ РІРµСЂСЃРёСЋ.') end
 	end)
 end
