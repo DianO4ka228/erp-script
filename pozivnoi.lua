@@ -26,13 +26,13 @@ local nicks = { -- [''] = '',
    -- Зам. Командира.
   ['Suetlan Zelimxanov'] = 'Суета', -- Зам. Командира.
   ['Sky_Sillence'] = 'Таеро', -- Инструктор.
-  ['Kwenyt_Hokage'] = 'Скорпион', -- Инструктор.
+  [''] = '', -- Инструктор.
   ['Blayzex_Stoun'] = 'Джамбо', -- Инструктор.
   
 -- Бойцы.
   ['Foxit_Makayonok'] = 'Лис',
   ['Hawii_Tearz'] = 'Шаха',
-  ['Aiden_Florestino'] = 'Призрак',
+  [''] = '',
   ['Anthony_Diez'] = 'Медведь',
   ['Ashton_Beasley'] = 'Ашот',
   ['Dini_Raksize'] = 'Дино',
