@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(3.28) 						            -- Указываем версию скрипта / FINAL
+script_version(3.29) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -14,7 +14,7 @@ local dlstatus = require('moonloader').download_status
 local nicks = { -- [''] = '',
 -- 12+
   ['Yupi_Mean'] = 'Юпик', -- Генерал.
-  ['Grace_Osborn'] = 'Вдова', -- Полковник.
+  ['Sonny_Raylonds'] = 'Чупендикс', -- Полковник.
   ['Emma_Cooper'] = 'Мать', -- Полковник.
   ['Wurn_Linkol'] = 'Даркхолм', -- Полковник.
   ['Cross_Dacota'] = 'Драко', -- Подполковник.
