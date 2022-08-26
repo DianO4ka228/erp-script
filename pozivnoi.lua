@@ -1,79 +1,79 @@
---Update: ГЋГЎГ­Г®ГўГЁГ« ГЇГ®Г§Г»ГўГ­Г»ГҐ/Г±Г®Г±ГІГ Гў
--- Г€Г­ГґГ®Г°Г¬Г Г¶ГЁГї Г® Г±ГЄГ°ГЁГЇГІГҐ
-script_name('В«Auto-DokladВ»') 		                    -- Г“ГЄГ Г§Г»ГўГ ГҐГ¬ ГЁГ¬Гї Г±ГЄГ°ГЁГЇГІГ 
-script_version(3.30) 						            -- Г“ГЄГ Г§Г»ГўГ ГҐГ¬ ГўГҐГ°Г±ГЁГѕ Г±ГЄГ°ГЁГЇГІГ  / FINAL
-script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Г“ГЄГ Г§Г»ГўГ ГҐГ¬ ГЁГ¬Гї Г ГўГІГ®Г°Г 
+--Update: Обновил позывные/состав
+-- Информация о скрипте
+script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
+script_version(3.30) 						            -- Указываем версию скрипта / FINAL
+script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
--- ГЃГЁГЎГ«ГЁГ®ГІГҐГЄГЁ
+-- Библиотеки
 require 'lib.moonloader'
 require 'lib.sampfuncs'
 local dlstatus = require('moonloader').download_status
 
 
--- ГЏГ®Г§Г»ГўГ­Г»ГҐ
+-- Позывные
 local nicks = { -- [''] = '',
 -- 12+
-  ['Yupi_Mean'] = 'ГћГЇГЁГЄ', -- ГѓГҐГ­ГҐГ°Г Г«.
-  ['Sonny_Raylonds'] = 'Г—ГіГЇГҐГ­Г¤ГЁГЄГ±', -- ГЏГ®Г«ГЄГ®ГўГ­ГЁГЄ.
-  ['Emma_Cooper'] = 'ГЊГ ГІГј', -- ГЏГ®Г«ГЄГ®ГўГ­ГЁГЄ.
-  ['Wurn_Linkol'] = 'Г„Г Г°ГЄГµГ®Г«Г¬', -- ГЏГ®Г«ГЄГ®ГўГ­ГЁГЄ.
-  ['Cross_Dacota'] = 'Г„Г°Г ГЄГ®', -- ГЏГ®Г¤ГЇГ®Г«ГЄГ®ГўГ­ГЁГЄ.
-  ['Vlad_Werber'] = 'ГЋГЄГіГ­Гј', -- ГЊГ Г©Г®Г°.
+  ['Yupi_Mean'] = 'Юпик', -- Генерал.
+  ['Sonny_Raylonds'] = 'Чупендикс', -- Полковник.
+  ['Emma_Cooper'] = 'Мать', -- Полковник.
+  ['Wurn_Linkol'] = 'Даркхолм', -- Полковник.
+  ['Cross_Dacota'] = 'Драко', -- Подполковник.
+  ['Vlad_Werber'] = 'Окунь', -- Майор.
 
--- ГЉГ®Г¬. Г±Г®Г±ГІГ Гў.
-  ['Alex_Frank'] = 'ГЌГҐГ¬ГҐГ¶', --ГЉГіГ°Г ГІГ®Г°.
-  ['Sergey_Fibo'] = 'ГЏГ Г­Г¤Г ', -- ГЉГ®Г¬Г Г­Г¤ГЁГ°.
-   -- Г‡Г Г¬. ГЉГ®Г¬Г Г­Г¤ГЁГ°Г .
-  ['Suetlan Zelimxanov'] = 'Г‘ГіГҐГІГ ', -- Г‡Г Г¬. ГЉГ®Г¬Г Г­Г¤ГЁГ°Г .
-  ['Sky_Sillence'] = 'Г’Г ГҐГ°Г®', -- Г€Г­Г±ГІГ°ГіГЄГІГ®Г°.
-  [''] = '', -- Г€Г­Г±ГІГ°ГіГЄГІГ®Г°.
-  ['Blayzex_Stoun'] = 'Г„Г¦Г Г¬ГЎГ®', -- Г€Г­Г±ГІГ°ГіГЄГІГ®Г°.
+-- Ком. состав.
+  ['Alex_Frank'] = 'Главный', --Куратор.
+  ['Sergey_Fibo'] = 'Панда', -- Командир.
+   -- Зам. Командира.
+  ['Suetlan Zelimxanov'] = 'Суета', -- Зам. Командира.
+  ['Sky_Sillence'] = 'Таеро', -- Инструктор.
+  [''] = '', -- Инструктор.
+  ['Blayzex_Stoun'] = 'Джамбо', -- Инструктор.
   
--- ГЃГ®Г©Г¶Г».
-  ['Foxit_Makayonok'] = 'Г‹ГЁГ±',
-  ['Hawii_Tearz'] = 'ГГ ГµГ ',
+-- Бойцы.
+  ['Foxit_Makayonok'] = 'Лис',
+  ['Hawii_Tearz'] = 'Шаха',
   [''] = '',
-  ['Anthony_Diez'] = 'ГЊГҐГ¤ГўГҐГ¤Гј',
-  ['Ashton_Beasley'] = 'ГЂГёГ®ГІ',
-  ['Dini_Raksize'] = 'Г’ГҐГ±ГІГҐГ°',
-  ['Comtonia_Oceguera'] = 'ГЉГ®Г¬ГЇГ®ГІ',
-  ['Makar_Ryabov'] = 'Г—ГҐГµ',
-  ['Sibewest_Silence'] = 'Г‘Г Г«Г®',
-  ['Suleyman_Zelimxanov'] = 'Г‘ГЄГ Г­Г¤Г Г«',
-  ['Azim_Kenes'] = 'Г”Г Г­ГІГ®Г¬',
-  ['Till_Cunningham'] = 'ГЊГіГ°',
-  ['Chris_Ludvig'] = 'ГџГ­ГЄГЁ',
-  ['Jason_Storm'] = 'ГГІГ®Г°Г¬',
+  ['Anthony_Diez'] = 'Медведь',
+  ['Ashton_Beasley'] = 'Ашот',
+  ['Dini_Raksize'] = 'Тестер',
+  ['Comtonia_Oceguera'] = 'Компот',
+  ['Makar_Ryabov'] = 'Чех',
+  ['Sibewest_Silence'] = 'Сало',
+  ['Suleyman_Zelimxanov'] = 'Скандал',
+  ['Azim_Kenes'] = 'Фантом',
+  ['Till_Cunningham'] = 'Мур',
+  ['Chris_Ludvig'] = 'Янки',
+  ['Jason_Storm'] = 'Шторм',
   
--- Г‘ГІГ Г¦ГҐГ°Г».
-  ['Calvin_Espinozzi'] = 'ГЌГ®Г§Г§ГЁ',
-  ['Henry_Markano'] = 'Г•Г Г­ГЄ',
-  ['Sofiya_Murphy'] = 'Г‘Г¬ГіГ°Гґ',
-  ['William_Lattice'] = 'ГђГ®Г«ГҐГЄГ±',
-  ['Gabriel_Olimpov'] = 'ГЃГ«Гі',
-  ['Near_Alpinstar'] = 'ГЏГҐГ°Г±ГЁГЄ',
-  ['Shane_Prix'] = 'ГЋГ°Г«ГЁГЄ',
-  ['Aleks_Bichovski'] = 'ГГ ГІГ Г©',
-  ['Salazar_Black'] = 'Г”ГҐГ­Г°ГЁГ°',
-  ['Jo_Bax'] = 'ГЃГ ГЄГ±'
+-- Стажеры.
+  ['Calvin_Espinozzi'] = 'Ноззи',
+  ['Henry_Markano'] = 'Ханк',
+  ['Sofiya_Murphy'] = 'Смурф',
+  ['William_Lattice'] = 'Ролекс',
+  ['Gabriel_Olimpov'] = 'Блу',
+  ['Near_Alpinstar'] = 'Персик',
+  ['Shane_Prix'] = 'Орлик',
+  ['Aleks_Bichovski'] = 'Шатай',
+  ['Salazar_Black'] = 'Фенрир',
+  ['Jo_Bax'] = 'Бакс'
 }
 
 function main()
   
-  -- ГЏГ°Г®ГўГҐГ°ГїГҐГ¬ Г§Г ГЈГ°ГіГ¦ГҐГ­ Г«ГЁ sampfuncs ГЁ SAMP ГҐГ±Г«ГЁ Г­ГҐ Г§Г ГЈГ°ГіГ¦ГҐГ­Г» - ГўГ®Г§ГўГ°Г Г№Г ГҐГ¬Г±Гї ГЄ Г­Г Г·Г Г«Гі
+  -- Проверяем загружен ли sampfuncs и SAMP если не загружены - возвращаемся к началу
 	if not isSampfuncsLoaded() or not isSampLoaded() then return end
-  -- ГЏГ°Г®ГўГҐГ°ГїГҐГ¬ Г§Г ГЈГ°ГіГ¦ГҐГ­ Г«ГЁ SA-MP
+  -- Проверяем загружен ли SA-MP
 	while not isSampAvailable() do wait(100) end
-  -- Г‘Г®Г®ГЎГ№Г ГҐГ¬ Г®ГЎ Г§Г ГЈГ°ГіГ§ГЄГҐ Г±ГЄГ°ГЁГЇГІГ 
-  stext('Г‘ГЄГ°ГЁГЇГІ ГіГ±ГЇГҐГёГ­Г® Г§Г ГЈГ°ГіГ¦ГҐГ­!')
+  -- Сообщаем об загрузке скрипта
+  stext('Скрипт успешно загружен!')
   
-  -- ГђГҐГЈГЁГ±ГІГ°ГЁГ°ГіГҐГ¬ ГЄГ®Г¬Г Г­Г¤Гі
+  -- Регистрируем команду
   sampRegisterChatCommand('dok', cmd_dok)
-  -- ГЏГ°Г®ГўГҐГ°ГїГҐГ¬ Г§Г ГёВёГ« Г«ГЁ ГЁГЈГ°Г®ГЄ Г­Г  Г±ГҐГ°ГўГҐГ°
+  -- Проверяем зашёл ли игрок на сервер
 	while not sampIsLocalPlayerSpawned() do wait(0) end
-	-- ГЏГ°Г®ГўГҐГ°ГЄГ  Г­Г  Г ГўГІГ®Г§Г ГЈГ°ГіГ§ГЄГі.
+	-- Проверка на автозагрузку.
   updateScript()
-  -- ГЃГҐГ±ГЄГ®Г­ГҐГ·Г­Г»Г© Г¶ГЁГЄГ« Г¤Г«Гї ГЇГ®Г±ГІГ®ГїГ­Г­Г®Г© Г°Г ГЎГ®ГІГ» Г±ГЄГ°ГЁГЇГІГ 
+  -- Бесконечный цикл для постоянной работы скрипта
   while true do
     wait(0)
   end
@@ -112,26 +112,26 @@ function cmd_dok(args)
         sampProcessChatInput(string.format('/r 10-%s, solo.', args))
       end
     else
-      atext('{808080}Г€Г­ГґГ®Г°Г¬Г Г¶ГЁГї | {FFFFFF}Г‚ГўГҐГ¤ГЁГІГҐ: /dok ГІГҐГ­-ГЄГ®Г¤.')
+      atext('{808080}Информация | {FFFFFF}Введите: /dok тен-код.')
       return
     end
   else
-    atext('{808080}ГЋГёГЁГЎГЄГ  | {FFFFFF}Г‚Г» Г­ГҐ Г±ГЁГ¤ГЁГІГҐ Гў ГІГ°Г Г­Г±ГЇГ®Г°ГІГҐ.')
+    atext('{808080}Ошибка | {FFFFFF}Вы не сидите в транспорте.')
     return
   end
 end
 
--- В«Auto-ReportВ» text
+-- «Auto-Report» text
 function stext(text)
   sampAddChatMessage((' %s {FFFFFF}%s'):format(script.this.name, text), 0xABAFDE)
 end
 
--- В» text
+-- » text
 function atext(text)
-	sampAddChatMessage((' В» {FFFFFF}%s'):format(text), 0xABAFDE)
+	sampAddChatMessage((' » {FFFFFF}%s'):format(text), 0xABAFDE)
 end
 
--- ГЂГўГІГ®-Г®ГЎГ­Г®ГўГ«ГҐГ­ГЁГҐ
+-- Авто-обновление
 function updateScript()
 	local filepath = os.getenv('TEMP') .. '\\online-update.json'
 	downloadUrlToFile('https://raw.githubusercontent.com/DianO4ka228/erp-script/main/online-update.json', filepath, function(id, status, p1, p2)
@@ -143,17 +143,17 @@ function updateScript()
 				if info and info.latest then
 					if tonumber(thisScript().version) < tonumber(info.latest) then
 						lua_thread.create(function()
-							print('ГЌГ Г·Г Г«Г®Г±Гј Г±ГЄГ Г·ГЁГўГ Г­ГЁГҐ Г®ГЎГ­Г®ГўГ«ГҐГ­ГЁГї. Г‘ГЄГ°ГЁГЇГІ ГЇГҐГ°ГҐГ§Г ГЈГ°ГіГ§ГЁГІГ±Гї Г·ГҐГ°ГҐГ§ ГЇГ Г°Гі Г±ГҐГЄГіГ­Г¤.')
+							print('Началось скачивание обновления. Скрипт перезагрузится через пару секунд.')
 							wait(300)
 							downloadUrlToFile(updatelink, thisScript().path, function(id3, status1, p13, p23)
-								if status1 == dlstatus.STATUS_ENDDOWNLOADDATA then print('ГЋГЎГ­Г®ГўГ«ГҐГ­ГЁГҐ ГіГ±ГЇГҐГёГ­Г® Г±ГЄГ Г·Г Г­Г® ГЁ ГіГ±ГІГ Г­Г®ГўГ«ГҐГ­Г®.')
-								elseif status1 == 64 then print('ГЋГЎГ­Г®ГўГ«ГҐГ­ГЁГҐ ГіГ±ГЇГҐГёГ­Г® Г±ГЄГ Г·Г Г­Г® ГЁ ГіГ±ГІГ Г­Г®ГўГ«ГҐГ­Г®.')
+								if status1 == dlstatus.STATUS_ENDDOWNLOADDATA then print('Обновление успешно скачано и установлено.')
+								elseif status1 == 64 then print('Обновление успешно скачано и установлено.')
 								end
 							end)
 						end)
-					else print('ГЋГЎГ­Г®ГўГ«ГҐГ­ГЁГ© Г±ГЄГ°ГЁГЇГІГ  Г­ГҐ Г®ГЎГ­Г Г°ГіГ¦ГҐГ­Г®.') end
+					else print('Обновлений скрипта не обнаружено.') end
 				end
-			else print('ГЏГ°Г®ГўГҐГ°ГЄГ  Г®ГЎГ­Г®ГўГ«ГҐГ­ГЁГї ГЇГ°Г®ГёГ«Г  Г­ГҐГіГ±ГЇГҐГёГ­Г®. Г‡Г ГЇГіГ±ГЄГ Гѕ Г±ГІГ Г°ГіГѕ ГўГҐГ°Г±ГЁГѕ.') end
-		elseif status == 64 then print('ГЏГ°Г®ГўГҐГ°ГЄГ  Г®ГЎГ­Г®ГўГ«ГҐГ­ГЁГї ГЇГ°Г®ГёГ«Г  Г­ГҐГіГ±ГЇГҐГёГ­Г®. Г‡Г ГЇГіГ±ГЄГ Гѕ Г±ГІГ Г°ГіГѕ ГўГҐГ°Г±ГЁГѕ.') end
+			else print('Проверка обновления прошла неуспешно. Запускаю старую версию.') end
+		elseif status == 64 then print('Проверка обновления прошла неуспешно. Запускаю старую версию.') end
 	end)
 end
