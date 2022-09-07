@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(3.48) 						            -- Указываем версию скрипта / FINAL
+script_version(3.49) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -15,9 +15,8 @@ local nicks = { -- [''] = '',
 -- 12+
   ['Yupi_Mean'] = 'Юпик', -- Генерал.
   ['Sonny_Raylonds'] = 'Чупендикс', -- Полковник.
-  ['Emma_Cooper'] = 'Мать', -- Полковник.
-  ['Wurn_Linkol'] = 'Даркхолм', -- Полковник.
-  ['Cross_Dacota'] = 'Драко', -- Подполковник.
+  ['Cross_Dacota'] = 'Драко', -- Полковник.
+  ['Derek_Bale'] = 'Баллон', -- Подполковник.
   ['Vlad_Werber'] = 'Окунь', -- Майор.
   ['Alex_Frank'] = 'Немец', --Майор.
 -- Ком. состав.
@@ -40,20 +39,23 @@ local nicks = { -- [''] = '',
   ['Azim_Kenes'] = 'Фантом',
   ['Till_Cunningham'] = 'Мур',
   ['Karl_Orlando'] = 'Курлык',
-  
--- Стажеры.
-  ['Calvin_Espinozzi'] = 'Ноззи',
-  ['Henry_Markano'] = 'Ханк',
-  ['William_Lattice'] = 'Ролекс',
-  ['Gabriel_Olimpov'] = 'Блу',
   ['Shane_Prix'] = 'Орлик',
-  ['Aleks_Bichovski'] = 'Шатай',
-  ['Salazar_Black'] = 'Фенрир',
+  ['Yukio Matsui'] = 'Джусай',
+  ['Gabriel_Olimpov'] = 'Блу',
+  ['Henry_Markano'] = 'Ханк',
   ['Chris_Lier'] = 'Туча',
   ['Ray_Lynn'] = 'Луня',
+  
+-- Стажеры.
+  ['Nakimura_Scandalist'] = 'Травка',
+  ['Hugh_Walshtraigem'] = 'Психолог',
+  ['Calvin_Espinozzi'] = 'Ноззи',
+  ['William_Lattice'] = 'Ролекс',
+  ['Aleks_Bichovski'] = 'Шатай',
+  ['Salazar_Black'] = 'Фенрир',
   ['Robert_Pastor'] = 'Дэнди',
   ['Kate_Lightwood'] = 'Киса',
-  ['Mike_Scoffild'] = 'Носок',
+  ['Mike_Scoffild'] = 'Скоф',
   ['Cristien_Cotto'] = 'Кот'
 }
 
