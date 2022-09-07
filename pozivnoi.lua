@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(3.50) 						            -- Указываем версию скрипта / FINAL
+script_version(3.51) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -20,7 +20,7 @@ local nicks = { -- [''] = '',
   ['Vlad_Werber'] = 'Окунь', -- Майор.
   ['Alex_Frank'] = 'Немец', --Майор.
 -- Ком. состав.
-  ['Blayzex_Stoun'] = 'Джамбо', -- Командир.
+  ['Dini_Raksize'] = 'Дино', -- Командир.
   ['Suetlan_Zelimxanov'] = 'Суета', -- Зам. Командира.
   ['Sky_Sillence'] = 'Таеро', -- Инструктор.
   ['Sergey_Fibo'] = 'Панда', -- Куратор.
@@ -33,6 +33,7 @@ local nicks = { -- [''] = '',
   ['Anthony_Diez'] = 'Медведь',
   ['Ashton_Beasley'] = 'Ашот',
   ['Dini_Raksize'] = 'Дино',
+  ['Blayzex_Stoun'] = 'Джамбо',
   ['Yukio_Matsui'] = 'Джусай',
   ['Sibewest_Silence'] = 'Сало',
   ['Suleyman_Zelimxanov'] = 'Скандал',
@@ -49,9 +50,6 @@ local nicks = { -- [''] = '',
 -- Стажеры.
   ['Nakimura_Scandalist'] = 'Травка',
   ['Hugh_Walshtraigen'] = 'Психолог',
-  ['Calvin_Espinozzi'] = 'Ноззи',
-  ['William_Lattice'] = 'Ролекс',
-  ['Aleks_Bichovski'] = 'Шатай',
   ['Salazar_Black'] = 'Фенрир',
   ['Robert_Pastor'] = 'Дэнди',
   ['Kate_Lightwood'] = 'Киса',
