@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(3.54) 						            -- Указываем версию скрипта / FINAL
+script_version(3.55) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -29,7 +29,6 @@ local nicks = { -- [''] = '',
 -- Бойцы.
   ['Nolik_Quiles'] = 'Ноль',
   ['Meki_Jefferson'] = 'Тень',
-  ['Ernesto_Roses'] = 'Эрни',
   ['Anthony_Diez'] = 'Медведь',
   ['Ashton_Beasley'] = 'Ашот',
   ['Dini_Raksize'] = 'Дино',
@@ -39,7 +38,6 @@ local nicks = { -- [''] = '',
   ['Suleyman_Zelimxanov'] = 'Скандал',
   ['Azim_Kenes'] = 'Фантом',
   ['Till_Cunningham'] = 'Мур',
-  ['Karl_Orlando'] = 'Курлык',
   ['Shane_Prix'] = 'Орлик',
   ['Yukio Matsui'] = 'Джусай',
   ['Gabriel_Olimpov'] = 'Блу',
