@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(3.60) 						            -- Указываем версию скрипта / FINAL
+script_version(3.61) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -47,7 +47,7 @@ local nicks = { -- [''] = '',
   
 -- Стажеры.
   ['Nakimura_Scandalist'] = 'Травка',
-  ['Hugh_Walshtraigen'] = 'Психолог',
+  ['Hugh_Walshtraigen'] = 'Визави',
   ['Salazar_Black'] = 'Фенрир',
   ['Robert_Pastor'] = 'Дэнди',
   ['Kate_Lightwood'] = 'Киса',
@@ -55,6 +55,7 @@ local nicks = { -- [''] = '',
   ['Ace_Derden'] = 'Эйс',
   ['Anthony Carrios'] = 'Джин',
   ['Kisati_Yashido'] = 'Долл',
+  ['Artem_Olupov'] = 'Мел',
   ['Shredder_Rose'] = 'Роза'
   
 }
