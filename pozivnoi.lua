@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(3.63) 						            -- Указываем версию скрипта / FINAL
+script_version(3.64) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -28,35 +28,28 @@ local nicks = { -- [''] = '',
   
 -- Бойцы.
   ['Nolik_Quiles'] = 'Ноль',
-  ['Meki_Jefferson'] = 'Тень',
   ['Anthony_Diez'] = 'Медведь',
-  ['Ashton_Beasley'] = 'Ашот',
   ['Dini_Raksize'] = 'Дино',
   ['Yukio_Matsui'] = 'Джусай',
-  ['Sibewest_Silence'] = 'Сало',
   ['Suleyman_Zelimxanov'] = 'Скандал',
-  ['Azim_Kenes'] = 'Фантом',
   ['Till_Cunningham'] = 'Мур',
   ['Shane_Prix'] = 'Орлик',
   ['Yukio Matsui'] = 'Джусай',
-  ['Gabriel_Olimpov'] = 'Блу',
   ['Henry_Markano'] = 'Ханк',
   ['Chris_Lier'] = 'Туча',
   ['Ray_Lynn'] = 'Луня',
   ['Mike_Scoffild'] = 'Скоф',
-  
--- Стажеры.
   ['Nakimura_Scandalist'] = 'Травка',
   ['Hugh_Walshtraigen'] = 'Визави',
   ['Salazar_Black'] = 'Фенрир',
-  ['Robert_Pastor'] = 'Дэнди',
   ['Kate_Lightwood'] = 'Киса',
-  ['Cristien_Cotto'] = 'Кот',
+  
+-- Стажеры.
+  ['Robert_Pastor'] = 'Дэнди',
   ['Ace_Derden'] = 'Эйс',
   ['Anthony_Carrios'] = 'Джин',
-  ['Kisati_Yashido'] = 'Долл',
-  ['Artem_Olupov'] = 'Мел',
   ['Foxit_Makayonok'] = 'Лис',
+  ['Valera_Milen'] = 'Цветок',
   ['Shredder_Rose'] = 'Роза'
   
 }
