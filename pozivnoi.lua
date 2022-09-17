@@ -1,7 +1,7 @@
 --Update: Îáíîâèë ïîçûâíûå/ñîñòàâ
 -- Èíôîðìàöèÿ î ñêðèïòå
 script_name('«Auto-Doklad»') 		                    -- Óêàçûâàåì èìÿ ñêðèïòà
-script_version(3.66) 						            -- Óêàçûâàåì âåðñèþ ñêðèïòà / FINAL
+script_version(3.67) 						            -- Óêàçûâàåì âåðñèþ ñêðèïòà / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Óêàçûâàåì èìÿ àâòîðà
 
 -- Áèáëèîòåêè
