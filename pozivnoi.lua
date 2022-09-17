@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(3.67) 						            -- Указываем версию скрипта / FINAL
+script_version(3.68) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -13,19 +13,18 @@ local dlstatus = require('moonloader').download_status
 -- Позывные
 local nicks = { -- [''] = '',
 -- 12+
-  ['Yupi_Mean'] = 'Юпик', -- Генерал.
   ['Sonny_Raylonds'] = 'Чупендикс', -- Полковник.
-  ['Emma_Cooper'] = 'Мать', -- Полковник.
-  ['Wurn_Linkol'] = 'Даркхолм', -- Полковник.
+  ['Derek_Bale'] = 'Баллон', -- Полковник.
   ['Cross_Dacota'] = 'Драко', -- Подполковник.
   ['Vlad_Werber'] = 'Окунь', -- Майор.
-  ['Alex_Frank'] = 'Немец', --Майор.
 -- Ком. состав.
   ['Blayzex_Stoun'] = 'Медведь', -- Командир.
   ['Suetlan_Zelimxanov'] = 'Суета', -- Зам. Командира.
   ['Sky_Sillence'] = 'Таеро', -- Инструктор.
   ['Sergey_Fibo'] = 'Панда', -- Куратор.
-  
+  ['Chris_Lier'] = 'Туча',
+  ['Shredder_Rose'] = 'Роза',
+
 -- Бойцы.
   ['Nolik_Quiles'] = 'Ноль',
   ['Meki_Jefferson'] = 'Тень',
@@ -38,7 +37,12 @@ local nicks = { -- [''] = '',
   ['Suleyman_Zelimxanov'] = 'Суетолог',
   ['Azim_Kenes'] = 'Фантом',
   ['Till_Cunningham'] = 'Мур',
-  ['Karl_Orlando'] = 'Курлык',
+  ['Ace_Derden'] = 'Эйс',
+  ['Hugh_Walshtraigem'] = 'Визави',
+  ['Kate_Lightwood'] = 'Киса',
+  ['Nakimura_Scandalist'] = 'Травка',
+  ['Foxit_Makayonok'] = 'Лис',
+  ['Hugh_Walshtraigem'] = 'Гога',
   
 -- Стажеры.
   ['Calvin_Espinozzi'] = 'Ноззи',
@@ -46,6 +50,10 @@ local nicks = { -- [''] = '',
   ['William_Lattice'] = 'Ролекс',
   ['Gabriel_Olimpov'] = 'Блу',
   ['Chris_Lier'] = 'Туча',
+  ['Robert_Pastor'] = 'Дэнди'
+  ['Suetlan Zelimxanov'] = 'Суета'
+  ['Valera Milen'] = 'Цветок'
+  ['Jo Bax'] = 'Бакс'
   ['Cristien_Cotto'] = 'Кот'
 }
 
