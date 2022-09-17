@@ -20,11 +20,11 @@ local nicks = { -- [''] = '',
   ['Dini_Raksize'] = 'Дино', -- Êîìàíäèð.
   ['Suetlan_Zelimxanov'] = 'Суета', -- Çàì. Êîìàíäèðà.
   ['Sergey_Fibo'] = 'Панда', -- Êóðàòîð.
-  ['Blayzex_Stoun'] = 'Джамбо', -- Èíñòðóêòîð.
+  ['Blayzex_Stoun'] = 'Медведь', -- Èíñòðóêòîð.
   
 -- Áîéöû.
   ['Nolik_Quiles'] = 'Ноль',
-  ['Anthony_Diez'] = 'Медведь',
+  ['Anthony_Diez'] = 'Ворон',
   ['Suleyman_Zelimxanov'] = 'Скандал',
   ['Till_Cunningham'] = 'Мур',
   ['Yukio Matsui'] = 'Джусай',
