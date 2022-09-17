@@ -51,9 +51,9 @@ local nicks = { -- [''] = '',
   ['Gabriel_Olimpov'] = 'Блу',
   ['Chris_Lier'] = 'Туча',
   ['Robert_Pastor'] = 'Дэнди'
-  ['Suetlan Zelimxanov'] = 'Суета'
-  ['Valera Milen'] = 'Цветок'
-  ['Jo Bax'] = 'Бакс'
+  ['Suetlan_Zelimxanov'] = 'Суета'
+  ['Valera_Milen'] = 'Цветок'
+  ['Jo_Bax'] = 'Бакс'
   ['Cristien_Cotto'] = 'Кот'
 }
 
