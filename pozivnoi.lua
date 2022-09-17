@@ -57,7 +57,7 @@ local nicks = { -- [''] = '',
   ['Ace_Derben'] = 'Эйс',
   ['Jo_Bax'] = 'Бакс',
   ['Valera_Milen'] = 'Цветок',
-  ['Robert_Pastor'] = 'Цветок'.
+  ['Robert_Pastor'] = 'Дэнди'
 }
 
 function main()
