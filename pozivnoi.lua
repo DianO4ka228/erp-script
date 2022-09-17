@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(3.70) 						            -- Указываем версию скрипта / FINAL
+script_version(3.71) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -13,19 +13,20 @@ local dlstatus = require('moonloader').download_status
 -- Позывные
 local nicks = { -- [''] = '',
 -- 12+
+  ['Yupi_Mean'] = 'Юпик', -- Генерал.
   ['Sonny_Raylonds'] = 'Чупендикс', -- Полковник.
-  ['Derek_Bale'] = 'Баллон', -- Полковник.
+  ['Emma_Cooper'] = 'Мать', -- Полковник.
+  ['Wurn_Linkol'] = 'Даркхолм', -- Полковник.
   ['Cross_Dacota'] = 'Драко', -- Подполковник.
   ['Vlad_Werber'] = 'Окунь', -- Майор.
-
+  ['Alex_Frank'] = 'Немец', --Майор.
 -- Ком. состав.
   ['Blayzex_Stoun'] = 'Медведь', -- Командир.
   ['Suetlan_Zelimxanov'] = 'Суета', -- Зам. Командира.
   ['Sky_Sillence'] = 'Таеро', -- Инструктор.
   ['Sergey_Fibo'] = 'Панда', -- Куратор.
-  ['Chris_Lier'] = 'Туча',
-  ['Shredder_Rose'] = 'Роза',
-
+  [''] = '', -- Инструктор.
+  
 -- Бойцы.
   ['Nolik_Quiles'] = 'Ноль',
   ['Meki_Jefferson'] = 'Тень',
@@ -38,24 +39,25 @@ local nicks = { -- [''] = '',
   ['Suleyman_Zelimxanov'] = 'Суетолог',
   ['Azim_Kenes'] = 'Фантом',
   ['Till_Cunningham'] = 'Мур',
-  ['Ace_Derden'] = 'Эйс',
-  ['Hugh_Walshtraigem'] = 'Визави',
-  ['Kate_Lightwood'] = 'Киса',
-  ['Nakimura_Scandalist'] = 'Травка',
-  ['Foxit_Makayonok'] = 'Лис',
-  ['Hugh_Walshtraigem'] = 'Гога',
+  ['Karl_Orlando'] = 'Курлык',
   
 -- Стажеры.
   ['Calvin_Espinozzi'] = 'Ноззи',
   ['Henry_Markano'] = 'Ханк',
   ['William_Lattice'] = 'Ролекс',
   ['Gabriel_Olimpov'] = 'Блу',
+  ['Shane_Prix'] = 'Орлик',
+  ['Aleks_Bichovski'] = 'Шатай',
+  ['Salazar_Black'] = 'Фенрир',
   ['Chris_Lier'] = 'Туча',
-  ['Robert_Pastor'] = 'Дэнди',
-  ['Suetlan_Zelimxanov'] = 'Суета',
-  ['Valera_Milen'] = 'Цветок',
+  ['Shredder_Rose'] = 'Роза',
+  ['Hugh_Walshtraigen'] = 'Гога',
+  ['Nakimura_Scandalist'] = 'Травка',
+  ['Kate_Lightwood'] = 'Киса',
+  ['Ace_Derben'] = 'Эйс',
   ['Jo_Bax'] = 'Бакс',
-  ['Cristien_Cotto'] = 'Кот'
+  ['Valera_Milen'] = 'Цветок',
+  ['Robert_Pastor'] = 'Цветок'.
 }
 
 function main()
