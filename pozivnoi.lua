@@ -54,7 +54,7 @@ local nicks = { -- [''] = '',
   ['Hugh_Walshtraigen'] = 'Гога',
   ['Nakimura_Scandalist'] = 'Травка',
   ['Kate_Lightwood'] = 'Киса',
-  ['Ace_Derben'] = 'Эйс',
+  ['Ace_Derden'] = 'Эйс',
   ['Jo_Bax'] = 'Бакс',
   ['Valera_Milen'] = 'Цветок',
   ['Robert_Pastor'] = 'Дэнди'
