@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(3.84) 						            -- Указываем версию скрипта / FINAL
+script_version(3.85) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -13,62 +13,33 @@ local dlstatus = require('moonloader').download_status
 -- Позывные
 local nicks = { -- [''] = '',
 -- 12+
-  ['Yupi_Mean'] = 'Юпик', -- Генерал.
-  ['Sonny_Raylonds'] = 'Чупендикс', -- Полковник.
-  ['Emma_Cooper'] = 'Мать', -- Полковник.
-  ['Wurn_Linkol'] = 'Даркхолм', -- Полковник.
   ['Cross_Dacota'] = 'Драко', -- Подполковник.
   ['Vlad_Werber'] = 'Окунь', -- Майор.
-  ['Alex_Frank'] = 'Немец', --Майор.
 -- Ком. состав.
   ['Blayzex_Stoun'] = 'Медведь', -- Командир.
-  ['Suetlan_Zelimxanov'] = 'Суета', -- Зам. Командира.
-  ['Sky_Sillence'] = 'Таеро', -- Инструктор.
   ['Sergey_Fibo'] = 'Панда', -- Куратор.
-  [''] = '', -- Инструктор.
   
 -- Бойцы.
   ['Nolik_Quiles'] = 'Ноль',
-  ['Meki_Jefferson'] = 'Тень',
-  ['Ernesto_Roses'] = 'Эрни',
   ['Anthony_Diez'] = 'Ворон',
-  ['Ashton_Beasley'] = 'Ашот',
-  ['Dini_Raksize'] = 'Дино',
-  ['Yukio_Matsui'] = 'Джусай',
-  ['Sibewest_Silence'] = 'Сало',
-  ['Suleyman_Zelimxanov'] = 'Суетолог',
-  ['Azim_Kenes'] = 'Фантом',
-  ['Karl_Orlando'] = 'Курлык',
   
 -- Стажеры.
-  ['Calvin_Espinozzi'] = 'Ноззи',
-  ['Henry_Markano'] = 'Ханк',
-  ['William_Lattice'] = 'Ролекс',
-  ['Gabriel_Olimpov'] = 'Блу',
-  ['Shane_Prix'] = 'Орлик',
-  ['Aleks_Bichovski'] = 'Шатай',
-  ['Salazar_Black'] = 'Фенрир',
-  ['Chris_Lier'] = 'Туча',
-  ['Shredder_Rose'] = 'Роза',
-  ['Hugh_Walshtraigen'] = 'Гога',
-  ['Nakimura_Scandalist'] = 'Травка',
-  ['Ace_Derden'] = 'Эйс',
-  ['Jo_Bax'] = 'Бакс',
-  ['Valera_Milen'] = 'Цветок',
-  ['Sentinell_Cunningham'] = 'Гуль',
-  ['Oscar_Sanchez'] = 'Тайфун',
-  ['Marcus_Stoun'] = 'Иней',
   ['Fara_Rest'] = 'Фара',
+  ['Ace_Derden'] = 'Эйс',
+  ['Sentinell_Cunningham'] = 'Гуль',
+  ['Jo_Bax'] = 'Бакс',
+  ['Nakimura_Scandalist'] = 'Травка',
   ['Benedict_Bradberry'] = 'Беня',
   ['Nikolay_Christenson'] = 'Гугл',
-  ['Robert_Haryes'] = 'Бяша',
-  ['Soup_Spartakus'] = 'Монолит',
+  ['Oscar_Sanchez'] = 'Тайфун',
   ['Linkoln_Esuo'] = 'Ёсик',
-  ['Kenny_Vaillant'] = 'Качан',
-  ['Rausanary_Royals'] = 'Сокол',
+  ['Romario_Nax'] = 'Нах',
+  ['Jo_Bax'] = 'Бакс',
+  ['Ruslan_Below'] = 'Кот',
+  ['Ernesto_Vaillant'] = 'Рулет',
   ['Gofi_Interno'] = 'Интерн',
-  ['Lina_Salieris'] = 'Рудя',
-  ['Lucas_Stoun'] = 'Велюр'
+  ['Kenny_Vaillant'] = 'Качан',
+  ['Marcus_Stoun'] = 'Иней'
 }
 
 function main()
