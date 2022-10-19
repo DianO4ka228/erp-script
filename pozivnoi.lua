@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(3.97) 						            -- Указываем версию скрипта / FINAL
+script_version(3.98) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -15,40 +15,31 @@ local nicks = { -- [''] = '',
 -- 12+
   ['Cross_Dacota'] = 'Драко', -- Подполковник.
   ['Vlad_Werber'] = 'Окунь', -- Майор.
+  ['Alex_Lattice'] = 'Латте', -- Подполковник.
 -- Ком. состав.
   ['Blayzex_Stoun'] = 'Медведь', -- Командир.
   ['Sergey_Fibo'] = 'Панда', -- Куратор.
   
 -- Бойцы.
   ['Nolik_Quiles'] = 'Ноль',
-  ['Anthony_Diez'] = 'Ворон',
   
 -- Стажеры.
   ['Fara_Rest'] = 'Фара',
   ['Ace_Derden'] = 'Эйс',
   ['Sentinell_Cunningham'] = 'Гуль',
-  ['Jo_Bax'] = 'Бакс',
   ['Nakimura_Scandalist'] = 'Мефедрон',
   ['Benedict_Bradberry'] = 'Беня',
   ['Nikolay_Christenson'] = 'Гугл',
   ['Oscar_Sanchez'] = 'Тайфун',
-  ['Linkoln_Esuo'] = 'Ёсик',
   ['Romario_Nax'] = 'Нах',
-  ['Jo_Bax'] = 'Бакс',
-  ['Ruslan_Below'] = 'Кот',
-  ['Ernesto_Vaillant'] = 'Рулет',
   ['Shredder_Rose'] = 'Роза',
-  ['Gofi_Interno'] = 'Интерн',
-  ['Matthew_Melody'] = 'Ангел',
   ['Pull_Krove'] = 'Кадеин',
-  ['Kenny_Vaillant'] = 'Качан',
   ['Lucas_Stoun'] = 'Бурбон',
   ['Azim_Kenes'] = 'Довакин',
   ['Stuart_Desiderio'] = 'Туман',
-  ['Roberto_Asaro'] = 'Слесарь',
-  ['Kirill_Magomedov'] = 'Мага',
-  ['Serand_Calebron'] = 'Калибр',
-  ['Marcus_Stoun'] = 'Иней'
+  ['Saints_Gavaets'] = 'Рысь',
+  ['Squeze_Syntax'] = 'Шиша',
+  ['Serand_Calebron'] = 'Калибр'
 }
 
 function main()
