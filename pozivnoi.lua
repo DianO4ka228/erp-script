@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(3.99) 						            -- Указываем версию скрипта / FINAL
+script_version(4.00) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -13,33 +13,37 @@ local dlstatus = require('moonloader').download_status
 -- Позывные
 local nicks = { -- [''] = '',
 -- 12+
-  ['Cross_Dacota'] = 'Драко', -- Подполковник.
-  ['Vlad_Werber'] = 'Окунь', -- Майор.
-  ['Alex_Lattice'] = 'Латте', -- Подполковник.
+  ['Sergey_Fibo'] = 'Панда', -- Генерал.
+  ['Vlad_Werber'] = 'Окунь', -- Полковник.
+  ['Vladimir_Fibo'] = 'Ноль', -- Майор.
+
 -- Ком. состав.
-  ['Blayzex_Stoun'] = 'Медведь', -- Командир.
-  ['Sergey_Fibo'] = 'Панда', -- Куратор.
+  ['Blayzex_Stoun'] = 'Медведь', -- Ex-Commander.
+  ['Benedict_Bradberry'] = 'Беня', -- Commander of SOBR.
+  ['Roberto_Asaro'] = 'Слесарь', -- Deputy Commander of SOBR
+  ['Lucas_Stoun'] = 'Бурбон', -- Deputy Commander of SOBR
+  ['Oscar_Sanchez'] = 'Тайфун', -- Operative
+  ['Romario_Nax'] = 'Нах', -- Operative
+  ['David_Lovecraft'] = 'Лав', -- Operative
+  ['Sketch_Phasewalker'] = 'Изолента', -- Operative
   
 -- Бойцы.
-  ['Nolik_Quiles'] = 'Ноль',
+  ['Derek_Lightwood'] = 'Бледный',
+  ['Andrey_Hamurov'] = 'Дрон',
+  ['Anthony_Murray'] = 'Муравей',
+  ['Anthony_Morenno'] = 'Невермор',
+  ['Dasha_Bitkova'] = 'Боевая',
+  ['Squeze_Syntax'] = 'Шиша',
+  ['Monica_Rodgers'] = 'Моня',
+  ['Jo_Bax'] = 'Бакс',
   
 -- Стажеры.
-  ['Fara_Rest'] = 'Фара',
-  ['Ace_Derden'] = 'Эйс',
-  ['Sentinell_Cunningham'] = 'Гуль',
-  ['Nakimura_Scandalist'] = 'Мефедрон',
-  ['Benedict_Bradberry'] = 'Беня',
-  ['Nikolay_Christenson'] = 'Гугл',
-  ['Oscar_Sanchez'] = 'Тайфун',
-  ['Romario_Nax'] = 'Нах',
-  ['Shredder_Rose'] = 'Роза',
-  ['Pull_Krove'] = 'Кадеин',
-  ['Lucas_Stoun'] = 'Бурбон',
-  ['Azim_Kenes'] = 'Довакин',
-  ['Stuart_Desiderio'] = 'Туман',
-  ['Saints_Gavaets'] = 'Рысь',
-  ['Tetsuro_Takimoto'] = 'Висп',
-  ['Squeze_Syntax'] = 'Шиша',
+  ['Lenny_Snart'] = 'Небо',
+  ['Matthew_Busquets'] = 'Крол',
+  ['Renya_Stoun'] = 'Татарчонок',
+  ['Danilka_Gol'] = 'Вескер',
+  ['Improove Herbenger'] = 'Прокоп',
+  ['Eve_Undefeated'] = 'Вино',
   ['Serand_Calebron'] = 'Калибр'
 }
 
